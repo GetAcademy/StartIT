@@ -1,0 +1,215 @@
+{
+  "size": 3,
+  "rows": [
+    [
+      {
+        "type": "small wall",
+        "isOpen": false
+      },
+      {
+        "type": "wide wall",
+        "isOpen": false
+      },
+      {
+        "type": "small wall",
+        "isOpen": false
+      },
+      {
+        "type": "wide wall",
+        "isOpen": false
+      },
+      {
+        "type": "small wall",
+        "isOpen": false
+      },
+      {
+        "type": "wide wall",
+        "isOpen": false
+      },
+      {
+        "type": "small wall",
+        "isOpen": false
+      }
+    ],
+    [
+      {
+        "type": "high wall",
+        "isOpen": false
+      },
+      {
+        "type": "room",
+        "isOpen": true
+      },
+      {
+        "type": "high wall",
+        "isOpen": true
+      },
+      {
+        "type": "room",
+        "isOpen": true
+      },
+      {
+        "type": "high wall",
+        "isOpen": false
+      },
+      {
+        "type": "room",
+        "isOpen": true
+      },
+      {
+        "type": "high wall",
+        "isOpen": false
+      }
+    ],
+    [
+      {
+        "type": "small wall",
+        "isOpen": false
+      },
+      {
+        "type": "wide wall",
+        "isOpen": false
+      },
+      {
+        "type": "small wall",
+        "isOpen": false
+      },
+      {
+        "type": "wide wall",
+        "isOpen": true
+      },
+      {
+        "type": "small wall",
+        "isOpen": false
+      },
+      {
+        "type": "wide wall",
+        "isOpen": false
+      },
+      {
+        "type": "small wall",
+        "isOpen": false
+      }
+    ],
+    [
+      {
+        "type": "high wall",
+        "isOpen": false
+      },
+      {
+        "type": "room",
+        "isOpen": true
+      },
+      {
+        "type": "high wall",
+        "isOpen": false
+      },
+      {
+        "type": "room",
+        "isOpen": true
+      },
+      {
+        "type": "high wall",
+        "isOpen": true
+      },
+      {
+        "type": "room",
+        "isOpen": true
+      },
+      {
+        "type": "high wall",
+        "isOpen": false
+      }
+    ],
+    [
+      {
+        "type": "small wall",
+        "isOpen": false
+      },
+      {
+        "type": "wide wall",
+        "isOpen": true
+      },
+      {
+        "type": "small wall",
+        "isOpen": false
+      },
+      {
+        "type": "wide wall",
+        "isOpen": true
+      },
+      {
+        "type": "small wall",
+        "isOpen": false
+      },
+      {
+        "type": "wide wall",
+        "isOpen": false
+      },
+      {
+        "type": "small wall",
+        "isOpen": false
+      }
+    ],
+    [
+      {
+        "type": "high wall",
+        "isOpen": false
+      },
+      {
+        "type": "room",
+        "isOpen": true
+      },
+      {
+        "type": "high wall",
+        "isOpen": false
+      },
+      {
+        "type": "room",
+        "isOpen": true
+      },
+      {
+        "type": "high wall",
+        "isOpen": true
+      },
+      {
+        "type": "room",
+        "isOpen": true
+      },
+      {
+        "type": "high wall",
+        "isOpen": false
+      }
+    ],
+    [
+      {
+        "type": "small wall",
+        "isOpen": false
+      },
+      {
+        "type": "wide wall",
+        "isOpen": false
+      },
+      {
+        "type": "small wall",
+        "isOpen": false
+      },
+      {
+        "type": "wide wall",
+        "isOpen": false
+      },
+      {
+        "type": "small wall",
+        "isOpen": false
+      },
+      {
+        "type": "wide wall",
+        "isOpen": false
+      },
+      {
+        "type": "small wall",
+        "isOpen": false
+      }
+    ]
+  ]
+}

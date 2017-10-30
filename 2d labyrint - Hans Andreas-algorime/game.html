@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        * {
+            vertical-align: top;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #container {
+            height: 95vh;
+            width: 95vh;
+            margin-top: 2.5vh;
+            margin-left: 2.5vh;
+        }
+
+        .top {
+            border-top: 1px solid black;
+        }
+
+        .left {
+            border-left: 1px solid black;
+        }
+
+        .right {
+            border-right: 1px solid black;
+        }
+
+        .bottom {
+            border-bottom: 1px solid black;
+        }
+
+        .node {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        var height = 50;
+        var width = 50;
+        var mazeEntrance = Math.floor(Math.random() * width);
+        var mazeExit = Math.floor(Math.random() * width);
+        var processedCells = [];
+        var allCells = initCells();
+
+        function initCells() {
+            var unProcessedCells = [];
+            for (var y = 0; y < height; y++) {
+                unProcessedCells[y] = [];
+                for (var x = 0; x < width; x++) {
+                    unProcessedCells[y][x] = { y: y, x: x, dir: "none", set: false };
+                }
+            }
+            return unProcessedCells;
+        }
+
+        function ProcessCell(g, d) {
+            allCells[g.y][g.x].set = true;
+            allCells[g.y][g.x].dir = d ? d : getDir(g);
+
+            pushToProcessedIfValidXY(g.x - 1, g.y);
+            pushToProcessedIfValidXY(g.x + 1, g.y);
+            pushToProcessedIfValidXY(g.x, g.y - 1);
+            pushToProcessedIfValidXY(g.x, g.y + 1);
+            for (var arrayIndex in processedCells) {
+                if (processedCells[arrayIndex].set) {
+                    processedCells.splice(e, 1);
+                    arrayIndex--;
+                }
+            }
+        }
+
+        function getDir(g) {
+            //pick a random adjacent node with "set:true" within the bounds
+            var dir = [];
+            if (isValidXY(g.x - 1, g.y)) dir.push("left");
+            if (isValidXY(g.x + 1, g.y)) dir.push("right");
+            if (isValidXY(g.x, g.y - 1)) dir.push("up");
+            if (isValidXY(g.x, g.y + 1)) dir.push("down");
+            return dir.length > 0 ? dir[Math.floor(Math.random() * dir.length)] : "none";
+        }
+
+        function pushToProcessedIfValidXY(x, y) {
+            if (isValidXY(x, y)) processedCells.push(allCells[y][x]);
+        }
+
+        function isValidXY(x, y) {
+            return x >= 0 && x < width && y >= 0 && y < height && allCells[x][y].set;
+        }
+
+        ProcessCell({ y: 0, x: Math.floor(Math.random() * width) }, "up");
+
+        var interval;
+        function update() {
+            ProcessCell(processedCells[Math.floor(Math.random() * processedCells.length)]);
+            graphic();
+            if (processedCells.length <= 0) {
+                clearInterval(interval);
+            }
+        }
+
+        function graphic() {
+            document.getElementById("container").innerHTML = "";
+            for (var y = 0; y < height; y++) {
+                for (var x = 0; x < width; x++) {
+                    var div = document.createElement("div");
+
+                    for (var e in processedCells) {
+                        if (processedCells[e].x == x && processedCells[e].y == y) {
+                            div.style.backgroundColor = "red";
+                        }
+                    }
+
+                    div.style.width = (100 / width) + "%";
+                    div.style.height = (100 / height) + "%";
+                    div.className = "node";
+
+                    if (x == 0 || (allCells[y][x].dir != "left" && allCells[y][x - 1].dir != "right")) {
+                        div.className += " left";
+                    }
+                    if (x == width - 1 || (allCells[y][x].dir != "right" && allCells[y][x + 1].dir != "left")) {
+                        div.className += " right";
+                    }
+                    if (y == 0 || (allCells[y][x].dir != "up" && allCells[y - 1][x].dir != "down")) {
+                        if (y > 0 || x != mazeEntrance) {
+                            div.className += " top";
+                        }
+
+                    }
+                    if (y == height - 1 || (allCells[y][x].dir != "down" && allCells[y + 1][x].dir != "up")) {
+                        if (y < height - 1 || x != mazeExit) {
+                            div.className += " bottom";
+                        }
+                    }
+                    document.getElementById("container").appendChild(div);
+                }
+            }
+        }
+
+        var visualizeProcess = true;
+        if (!visualizeProcess) {
+            while (processedCells.length > 0) {
+                ProcessCell(processedCells[Math.floor(Math.random() * processedCells.length)]);
+            }
+        } else {
+            interval = setInterval(update, 5000);
+        }
+
+        graphic();
+    </script>
+</body>
+</html>

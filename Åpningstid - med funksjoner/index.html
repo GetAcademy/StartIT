@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h3>Funksjoner og scope</h3>
+    <ul>
+        <li>Forenkle koden vha => Samme kode flere steder => Lage en funksjon</li>
+        <li>Parametre</li>
+        <li>Returverdi</li>
+        <li>Scope til en variabel</li>
+        <li>Kode er som tekst. Bruk punktum, og avsnitt!</li>
+
+    </ul>
+    Dag: <input id="day" onchange="showDayAndTime()" type="range" min="1" max="7" /><br />
+    Time: <input id="hour" onchange="showDayAndTime()" type="range" min="0" max="23" /><br />
+    Minutter: <input id="minute" onchange="showDayAndTime()" type="range" min="0" max="59" /><br />
+
+    <div id="dayAndTime" style="padding-top: 20px;"></div>
+    <script type="text/javascript">
+        var div = document.getElementById('dayAndTime');
+
+        function showDayAndTime() {
+            var day = document.getElementById('day').value;
+            var dayNo = parseInt(day);
+
+            day = dayNameFromNumber(dayNo);
+            var hour = document.getElementById('hour').value;
+            var minute = document.getElementById('minute').value;
+            div.innerHTML = day + ' - ' + hour + ':' + minute;
+
+            // Mandag - torsdag 11-17
+            if (dayNo < 5) show(hour >= 11 && hour <= 16);
+            // Fredag 11-18
+            else if (dayNo === 5) show(hour >= 11 && hour <= 17);
+            // Lørdag 11-15
+            else if (dayNo === 6) show(hour >= 11 && hour <= 14);
+            else if (dayNo === 7) show(false);
+        }
+
+        function show(isOpen) {
+            var text = isOpen ? 'Åpen' : 'Stengt';
+            div.innerHTML = '<p>' + text + '</p>';
+        }
+
+        function dayNameFromNumber(dayNo) {
+            if (dayNo === 1) return 'Mandag';
+            if (dayNo === 2) return 'Tirsdag';
+            if (dayNo === 3) return 'Onsdag';
+            if (dayNo === 4) return 'Torsdag';
+            if (dayNo === 5) return 'Fredag';
+            if (dayNo === 6) return 'Lørdag';
+            if (dayNo === 7) return 'Søndag';
+            return 'Ukjent dag';
+        }
+    </script>
+</body>
+</html>

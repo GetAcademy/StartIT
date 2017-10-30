@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        td {
+            width: 10px;
+            height: 10px;
+        }
+
+            td.snake {
+                background-color: blueviolet;
+            }
+    </style>
+</head>
+<body onkeydown="controlSnake()">
+    <table border="1" id="snakeTable"></table>
+    <script>
+        var snakeModel;
+        initModel();
+        updateView();
+
+        function updateView() {
+            var snakeTable = document.getElementById('snakeTable');
+            snakeTable.innerHTML = '';
+
+            for (var rowIndex = 0; rowIndex < snakeModel.size; rowIndex++) {
+                var tr = snakeTable.insertRow();
+                for (var columnIndex = 0; columnIndex < snakeModel.size; columnIndex++) {
+                    var td = tr.insertCell();
+                }
+            }
+            var snakeHead = snakeModel.snakeHead;
+            var td = snakeTable.rows[snakeHead.y].cells[snakeHead.x];
+            td.classList.add('snake');
+        }
+
+        function initModel() {
+            snakeModel = { size: 30 };
+            snakeModel.snakeHead = createRandomPosition();
+            snakeModel.food = createRandomPosition();
+        }
+
+        function createRandomPosition() {
+            return {
+                x: Math.floor(Math.random() * snakeModel.size),
+                y: Math.floor(Math.random() * snakeModel.size)
+            }
+        }
+
+        function controlSnake(event) {
+            console.log(event);
+        }
+    </script>
+</body>
+</html>

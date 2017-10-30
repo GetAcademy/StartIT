@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        td {
+            border: 1px solid darkgray;
+            padding: 2px;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            vertical-align: middle;
+            font-weight: bolder;
+            text-shadow: 1px 0 #888888;
+            background-color: gray;
+        }
+
+        td.x3 {
+            color: red;
+        }
+
+        td.x2 {
+            color: green;
+        }
+
+        td.x1 {
+            color: blue;
+        }
+
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+            background-color: aliceblue;
+        }
+
+        span {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    Minesweeper
+
+    <table>
+        <tr>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)" class="x1"><span>1</span></td>
+            <td onclick="show(this)"><span>💣</span></td>
+            <td onclick="show(this)" class="x1"><span>1</span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+        </tr>
+        <tr>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)" class="x1"><span>1</span></td>
+            <td onclick="show(this)" class="x1"><span>1</span></td>
+            <td onclick="show(this)" class="x2"><span>2</span></td>
+            <td onclick="show(this)" class="x1"><span>1</span></td>
+            <td onclick="show(this)" class="x1"><span>1</span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+        </tr>
+        <tr>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)" class="x1"><span>1</span></td>
+            <td onclick="show(this)" class="x3"><span>3</span></td>
+            <td onclick="show(this)"><span>💣</span></td>
+            <td onclick="show(this)" class="x2"><span>2</span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+        </tr>
+        <tr>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)" class="x1"><span>1</span></td>
+            <td onclick="show(this)"><span>💣</span></td>
+            <td onclick="show(this)"><span>💣</span></td>
+            <td onclick="show(this)" class="x2"><span>2</span></td>
+            <td onclick="show(this)"><span> </span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+        </tr>
+        <tr>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)" class="x1"><span>1</span></td>
+            <td onclick="show(this)" class="x2"><span>2</span></td>
+            <td onclick="show(this)" class="x2"><span>2</span></td>
+            <td onclick="show(this)" class="x1"><span>1</span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+        </tr>
+        <tr>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+        </tr>
+        <tr>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)" class="x1"><span>1</span></td>
+        </tr>
+        <tr>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)" class="x1"><span>1</span></td>
+            <td onclick="show(this)"><span>💣</span></td>
+        </tr>
+        <tr>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)" class="x1"><span>1</span></td>
+        </tr>
+        <tr>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+            <td onclick="show(this)"><span></span></td>
+        </tr>
+    </table>
+
+    <script type="text/javascript">
+        function show(tdElement) {
+            tdElement.style.backgroundColor = 'lightcyan';
+            var spanElement = tdElement.getElementsByTagName('span')[0];
+            spanElement.style.display = 'inline';
+        }
+    </script>
+</body>
+</html>

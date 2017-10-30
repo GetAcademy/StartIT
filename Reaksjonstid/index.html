@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reaksjonstid</title>
+    <style type="text/css">
+        div.lamp
+        {
+            border-radius: 50%;
+            width: 130px;
+            height: 130px;
+            border: lightblue 4px solid;
+            background-color: #3e3e3e;
+            float: left;
+            margin: 20px;
+        }
+        div.lightOn
+        {
+            background-color: yellow;
+        }
+        div.first
+        {
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+<div id="info"></div>
+<div class="lamp first" onclick="turnOff(this)"></div>
+    <div class="lamp" onclick="turnOff(this)"></div>
+    <div class="lamp" onclick="turnOff(this)"></div>
+    <div class="lamp" onclick="turnOff(this)"></div>
+    <div class="lamp" onclick="turnOff(this)"></div>
+
+<div class="lamp first" onclick="turnOff(this)"></div>
+    <div class="lamp" onclick="turnOff(this)"></div>
+    <div class="lamp" onclick="turnOff(this)"></div>
+    <div class="lamp" onclick="turnOff(this)"></div>
+    <div class="lamp" onclick="turnOff(this)"></div>
+
+<div class="lamp first" onclick="turnOff(this)"></div>
+    <div class="lamp" onclick="turnOff(this)"></div>
+    <div class="lamp" onclick="turnOff(this)"></div>
+    <div class="lamp" onclick="turnOff(this)"></div>
+    <div class="lamp" onclick="turnOff(this)"></div>
+
+<div class="lamp first" onclick="turnOff(this)"></div>
+    <div class="lamp" onclick="turnOff(this)"></div>
+    <div class="lamp" onclick="turnOff(this)"></div>
+    <div class="lamp" onclick="turnOff(this)"></div>
+    <div class="lamp" onclick="turnOff(this)"></div>
+
+<div class="lamp first" onclick="turnOff(this)"></div>
+    <div class="lamp" onclick="turnOff(this)"></div>
+    <div class="lamp" onclick="turnOff(this)"></div>
+    <div class="lamp" onclick="turnOff(this)"></div>
+    <div class="lamp" onclick="turnOff(this)"></div>
+
+<script>
+
+    var startTime = new Date().getTime();
+
+    turnOnRandom();
+
+    function turnOnRandom() {
+        var elementsList = document.getElementsByClassName("lamp");
+        var randomIndex = Math.floor(Math.random() * elementsList.length);
+        var selectedElement = elementsList[randomIndex];
+        var selectedElementClassList = selectedElement.classList;
+        selectedElementClassList.add("lightOn");
+    }
+
+    function turnOff(selectedElement)
+    {
+        var selectedElementClassList = selectedElement.classList;
+        if(selectedElementClassList.contains("lightOn")) {
+            var finishTime = new Date().getTime();
+            var spentMilliseconds = Math.floor(finishTime - startTime);
+            var spentSeconds = spentMilliseconds / 1000;
+            document.getElementById('info').innerHTML = 'Du brukte ' + spentSeconds + ' sekunder.'
+            startTime = new Date().getTime();
+            selectedElementClassList.remove("lightOn");
+            turnOnRandom();
+        }
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p>
+        Ferdighet 4a - Variabel utenfor funksjon og innenfor funksjon, samt sette sammen tekst av flere deler
+        - <b>Lagre div-element</b>
+    </p>
+    <button onclick="doClick(this)">Knapp A</button>
+    <button onclick="doClick(this)">Knapp B</button>
+    <button onclick="doClick(this)">Knapp C</button>
+    <div id="info">Tykk på en knapp!</div>
+
+    <script>
+        var infoDiv = document.getElementById('info');
+        var buttonClickedLast;
+
+        function doClick(buttonClicked) {
+            infoDiv.innerHTML = '<br/>Du trykket på ' + buttonClicked.innerHTML;
+            if (buttonClickedLast) {
+                infoDiv.innerHTML += '<br/>Forrige gang trykket du på ' + buttonClickedLast.innerHTML;
+            }
+            if (buttonClicked == buttonClickedLast) {
+                infoDiv.innerHTML += '<br/>Du har trykket på samme knapp to (eller flere) ganger!';
+            }
+            buttonClickedLast = buttonClicked;
+        }
+    </script>
+</body>
+</html>

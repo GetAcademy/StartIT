@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="enheter.json"></script>
+    <style>
+        table, td {
+            border-collapse: collapse;
+            border: solid 1px gray;
+            padding: 2px;
+        }
+
+        tr:nth-child(even) {
+            background: #CCC
+        }
+
+        tr:nth-child(odd) {
+            background: #FFF
+        }
+
+        th {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainContent"></div>
+    <script>
+        class UnitsView {
+            constructor(model) {
+                this.model = model;
+                this.fields = ['organisasjonsnummer', 'antallAnsatte', 'navn'];
+            }
+
+            update() {
+                document.getElementById('mainContent').innerHTML = this.createTable();
+            }
+
+            createTable() {
+                return '<table><tr>' +
+                    this.fields.reduce((html, fieldName) => html + this.createHeader(fieldName), '') +
+                    '</tr>' +
+                    this.model.units.reduce((html, row) => html + this.createRow(row), '') +
+                    '</table>';
+            }
+
+            createRow(modelRow) {
+                return '<tr>' +
+                    this.fields.reduce((html, fieldName) => html + this.createCell(fieldName, modelRow), '') +
+                    //+ '<td><button onclick="controller.edit(' + modelRow.i + ')">edit</button></td>' 
+                    + '</tr>';
+            }
+
+            createCell(fieldName, modelRow) {
+                return '<td>' + modelRow[fieldName] + '</td>';
+            }
+
+            createHeader(fieldName) {
+                return '<th>' + fieldName + '</th>';
+            }
+        }
+
+        class UnitsModel {
+            constructor(units) {
+                this.units = units;
+                units.forEach((el, i) => units[i].i = i);
+                
+            }
+        }
+
+        class UnitsController {
+            constructor(model, updateFunction) {
+                this.updateFunction = updateFunction;
+                updateFunction();
+            }
+        }
+
+
+        var model = new UnitsModel(units);
+        var view = new UnitsView(model);
+        var controller = new UnitsController(model, () => view.update());
+
+
+    </script>
+</body>
+</html>

@@ -55,8 +55,8 @@
 
             createButtons(modelRow) {
                 return modelRow.edit
-                    ? '<td><button onclick="controller.save(' + modelRow.i + ', false, this)">cancel</button>'
-                    + '<button onclick="controller.save(' + modelRow.i + ', true, this)">save</button></td>'
+                    ? '<td><button onclick="controller.save(' + modelRow.i + ', false)">cancel</button>'
+                    + '<button onclick="controller.save(' + modelRow.i + ', true)">save</button></td>'
                     : '<td><button onclick="controller.edit(' + modelRow.i + ')">edit</button></td>';
             }
 
@@ -92,7 +92,7 @@
                 this.updateFunction();
             }
 
-            save(i, really, buttonTag) {
+            save(i, really) {
                 if (really) {
                     const trTag = document.getElementById('row' + i);
                     const inputs = Array.from(trTag.getElementsByTagName('input'));

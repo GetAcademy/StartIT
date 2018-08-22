@@ -32,7 +32,6 @@
         class UnitsView {
             constructor(model) {
                 this.model = model;
-                this.fields = ['organisasjonsnummer', 'antallAnsatte', 'navn'];
             }
 
             update() {
@@ -40,22 +39,32 @@
             }
 
             createTable() {
-                return '<table><tr>' +
-                    this.fields.reduce((html, fieldName) => html + this.createHeader(fieldName), '') +
-                    '</tr>' +
-                    this.model.units.reduce((html, row) => html + this.createRow(row), '') +
-                    '</table>';
+                return '<table><tr>'
+                    + this.model.fields.reduce((html, fieldName) => html + this.createHeader(fieldName), '')
+                    + '<th></th></tr>'
+                    + this.model.units.reduce((html, row) => html + this.createRow(row), '')
+                    + '</table>';
             }
 
             createRow(modelRow) {
-                return '<tr>' +
-                    this.fields.reduce((html, fieldName) => html + this.createCell(fieldName, modelRow), '') +
-                    //+ '<td><button onclick="controller.edit(' + modelRow.i + ')">edit</button></td>' 
+                return '<tr id="row' + modelRow.i + '">'
+                    + this.model.fields.reduce((html, fieldName) => html + this.createCell(fieldName, modelRow), '')
+                    + this.createButtons(modelRow)
                     + '</tr>';
             }
 
+            createButtons(modelRow) {
+                return modelRow.edit
+                    ? '<td><button onclick="controller.save(' + modelRow.i + ', false, this)">cancel</button>'
+                    + '<button onclick="controller.save(' + modelRow.i + ', true, this)">save</button></td>'
+                    : '<td><button onclick="controller.edit(' + modelRow.i + ')">edit</button></td>';
+            }
+
             createCell(fieldName, modelRow) {
-                return '<td>' + modelRow[fieldName] + '</td>';
+                const value = modelRow[fieldName] ? modelRow[fieldName] : '';
+                return modelRow.edit
+                    ? '<td><input type="text" value="' + modelRow[fieldName] + '"/></td>'
+                    : '<td>' + modelRow[fieldName] + '</td>';
             }
 
             createHeader(fieldName) {
@@ -65,16 +74,34 @@
 
         class UnitsModel {
             constructor(units) {
+                this.fields = ['organisasjonsnummer', 'antallAnsatte', 'navn'];
                 this.units = units;
                 units.forEach((el, i) => units[i].i = i);
-                
             }
         }
 
         class UnitsController {
             constructor(model, updateFunction) {
+                this.model = model;
                 this.updateFunction = updateFunction;
                 updateFunction();
+            }
+
+            edit(i) {
+                this.model.units[i].edit = true;
+                this.updateFunction();
+            }
+
+            save(i, really, buttonTag) {
+                if (really) {
+                    const trTag = document.getElementById('row' + i);
+                    const inputs = Array.from(trTag.getElementsByTagName('input'));
+                    const values = inputs.map(input => input.value);
+                    const row = this.model.units[i];
+                    this.model.fields.forEach((f, index) => row[f] = values[index]);
+                }
+                this.model.units[i].edit = false;
+                this.updateFunction();
             }
         }
 

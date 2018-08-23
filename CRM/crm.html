@@ -61,7 +61,6 @@
             }
 
             createCell(fieldName, modelRow) {
-                const value = modelRow[fieldName] ? modelRow[fieldName] : '';
                 return modelRow.edit
                     ? '<td><input type="text" value="' + modelRow[fieldName] + '"/></td>'
                     : '<td>' + modelRow[fieldName] + '</td>';

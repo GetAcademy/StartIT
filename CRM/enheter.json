@@ -1,0 +1,5193 @@
+var units = [
+  {
+    "organisasjonsnummer": "810130822",
+    "navn": "ALSTRA AS",
+    "organisasjonsform": {
+      "kode": "AS",
+      "beskrivelse": "Aksjeselskap",
+      "links": []
+    },
+    "postadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "4990",
+      "poststed": "SØNDELED",
+      "adresse": [ "Søndeledveien 805" ],
+      "kommune": "RISØR",
+      "kommunenummer": "0901"
+    },
+    "registreringsdatoEnhetsregisteret": "1995-03-12",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Engroshandel med byggevarer ikke nevnt annet sted",
+      "kode": "46.739"
+    },
+    "antallAnsatte": 5,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "4990",
+      "poststed": "SØNDELED",
+      "adresse": [ "Homme" ],
+      "kommune": "RISØR",
+      "kommunenummer": "0901"
+    },
+    "stiftelsesdato": "1973-12-17",
+    "institusjonellSektorkode": {
+      "kode": "2100",
+      "beskrivelse": "Private aksjeselskaper mv."
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "sisteInnsendteAarsregnskap": "2017",
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "810928662",
+    "navn": "TORE BYGDNES KONTORMASKINSERVICE",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "1995-02-19",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Engroshandel med maskiner og utstyr til kontor ellers",
+      "kode": "46.660"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "8406",
+      "poststed": "SORTLAND",
+      "adresse": [ "Blokken" ],
+      "kommune": "SORTLAND",
+      "kommunenummer": "1870"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811169862",
+    "navn": "FILTBYGG AS",
+    "organisasjonsform": {
+      "kode": "AS",
+      "beskrivelse": "Aksjeselskap",
+      "links": []
+    },
+    "postadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0401",
+      "poststed": "OSLO",
+      "adresse": [ "c/o Zenith Eiendom AS", "Postboks 4218 Nydalen" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "registreringsdatoEnhetsregisteret": "1995-02-19",
+    "registrertIMvaregisteret": true,
+    "frivilligMvaRegistrertBeskrivelser": [ "Utleier av bygg eller anlegg" ],
+    "naeringskode1": {
+      "beskrivelse": "Utleie av egen eller leid fast eiendom ellers",
+      "kode": "68.209"
+    },
+    "antallAnsatte": 1,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3018",
+      "poststed": "DRAMMEN",
+      "adresse": [ "Øvre Storgate 104" ],
+      "kommune": "DRAMMEN",
+      "kommunenummer": "0602"
+    },
+    "stiftelsesdato": "1916-03-09",
+    "institusjonellSektorkode": {
+      "kode": "2100",
+      "beskrivelse": "Private aksjeselskaper mv."
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "sisteInnsendteAarsregnskap": "2017",
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811176702",
+    "navn": "SAS NORGE AS",
+    "organisasjonsform": {
+      "kode": "AS",
+      "beskrivelse": "Aksjeselskap",
+      "links": []
+    },
+    "postadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "2061",
+      "poststed": "GARDERMOEN",
+      "adresse": [ "Postboks 144" ],
+      "kommune": "ULLENSAKER",
+      "kommunenummer": "0235"
+    },
+    "registreringsdatoEnhetsregisteret": "1995-02-19",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Lufttransport med passasjerer",
+      "kode": "51.100"
+    },
+    "naeringskode2": {
+      "beskrivelse": "Uoppgitt",
+      "kode": "00.000"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "2060",
+      "poststed": "GARDERMOEN",
+      "adresse": [ "Henrik Ibsens vei", "Teknisk Base, 2. etasje" ],
+      "kommune": "ULLENSAKER",
+      "kommunenummer": "0235"
+    },
+    "stiftelsesdato": "1946-07-02",
+    "institusjonellSektorkode": {
+      "kode": "2100",
+      "beskrivelse": "Private aksjeselskaper mv."
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "sisteInnsendteAarsregnskap": "2017",
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811320862",
+    "navn": "KLINGVIG AS",
+    "organisasjonsform": {
+      "kode": "AS",
+      "beskrivelse": "Aksjeselskap",
+      "links": []
+    },
+    "postadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "4270",
+      "poststed": "ÅKREHAMN",
+      "adresse": [ "c/o Øystein Vigdal", "Stongvegen 70" ],
+      "kommune": "KARMØY",
+      "kommunenummer": "1149"
+    },
+    "registreringsdatoEnhetsregisteret": "1995-02-19",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Utleie av egen eller leid fast eiendom ellers",
+      "kode": "68.209"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "2070",
+      "poststed": "RÅHOLT",
+      "adresse": [ "Råholtgutua 12" ],
+      "kommune": "EIDSVOLL",
+      "kommunenummer": "0237"
+    },
+    "stiftelsesdato": "1973-03-06",
+    "institusjonellSektorkode": {
+      "kode": "2100",
+      "beskrivelse": "Private aksjeselskaper mv."
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "sisteInnsendteAarsregnskap": "2017",
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811545422",
+    "navn": "NICOLAS VARETRANSPORT KUBWIMANA",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-07-30",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Godstransport på vei",
+      "kode": "49.410"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "5160",
+      "poststed": "LAKSEVÅG",
+      "adresse": [ "Håsteins gate 23" ],
+      "kommune": "BERGEN",
+      "kommunenummer": "1201"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811546852",
+    "navn": "SAFEBASE AS",
+    "organisasjonsform": {
+      "kode": "AS",
+      "beskrivelse": "Aksjeselskap",
+      "links": []
+    },
+    "hjemmeside": "www.safebase.no",
+    "registreringsdatoEnhetsregisteret": "2013-02-11",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Konsulentvirksomhet tilknyttet informasjonsteknologi",
+      "kode": "62.020"
+    },
+    "antallAnsatte": 9,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "7013",
+      "poststed": "TRONDHEIM",
+      "adresse": [ "Schultz gate 1" ],
+      "kommune": "TRONDHEIM",
+      "kommunenummer": "5001"
+    },
+    "stiftelsesdato": "2013-01-24",
+    "institusjonellSektorkode": {
+      "kode": "2100",
+      "beskrivelse": "Private aksjeselskaper mv."
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "sisteInnsendteAarsregnskap": "2017",
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811549452",
+    "navn": "SIGNALGIVER HANSEN AS",
+    "organisasjonsform": {
+      "kode": "AS",
+      "beskrivelse": "Aksjeselskap",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-02-12",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Annen faglig, vitenskapelig og teknisk virksomhet ikke nevnt annet sted",
+      "kode": "74.909"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "1786",
+      "poststed": "HALDEN",
+      "adresse": [ "Oskleiva 77" ],
+      "kommune": "HALDEN",
+      "kommunenummer": "0101"
+    },
+    "stiftelsesdato": "2013-01-03",
+    "institusjonellSektorkode": {
+      "kode": "2100",
+      "beskrivelse": "Private aksjeselskaper mv."
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "sisteInnsendteAarsregnskap": "2015",
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": true,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811549592",
+    "navn": "SLEEPIN' MOUNTAIN ANDRÉ RINGEN",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-02-11",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Reklamebyråer",
+      "kode": "73.110"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "1177",
+      "poststed": "OSLO",
+      "adresse": [ "Bekkelagsterrassen 26" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811551902",
+    "navn": "GEWAN AL MOUSA",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-02-11",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Allmenn legetjeneste",
+      "kode": "86.211"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "2818",
+      "poststed": "GJØVIK",
+      "adresse": [ "Glimmervegen 9" ],
+      "kommune": "GJØVIK",
+      "kommunenummer": "0502"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811560472",
+    "navn": "DRIVENES OG HONNEMYR MASKIN DA",
+    "organisasjonsform": {
+      "kode": "DA",
+      "beskrivelse": "Ansvarlig selskap med delt ansvar",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-02-12",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Tjenester tilknyttet skogbruk",
+      "kode": "02.400"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "4707",
+      "poststed": "VENNESLA",
+      "adresse": [ "v/Arne Honnemyr", "Kvernhusdalen 2" ],
+      "kommune": "VENNESLA",
+      "kommunenummer": "1014"
+    },
+    "stiftelsesdato": "2013-01-23",
+    "institusjonellSektorkode": {
+      "kode": "2300",
+      "beskrivelse": "Personlige foretak"
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811561452",
+    "navn": "BIRKEDAL SALG",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-07-02",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Engroshandel med husholdningsvarer og varer til personlig bruk ikke nevnt annet sted",
+      "kode": "46.499"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "4319",
+      "poststed": "SANDNES",
+      "adresse": [ "Gåshaugen 25" ],
+      "kommune": "SANDNES",
+      "kommunenummer": "1102"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811561622",
+    "navn": "SJAMANISTISK FORBUND OPPLAND",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "postadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "2973",
+      "poststed": "RYFOSS",
+      "adresse": [ "Sjamanistisk Forbund Oppland", "Føssesvingen 4" ],
+      "kommune": "VANG",
+      "kommunenummer": "0545"
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-14",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Religiøse organisasjoner",
+      "kode": "94.910"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "9022",
+      "poststed": "KROKELVDALEN",
+      "adresse": [ "Sjamanistisk Forbund", "Gneisvegen 39" ],
+      "kommune": "TROMSØ",
+      "kommunenummer": "1902"
+    },
+    "stiftelsesdato": "2012-09-03",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811566632",
+    "navn": "RUNE FJELLBERG",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-02-16",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Annen undervisning ikke nevnt annet sted",
+      "kode": "85.599"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "5217",
+      "poststed": "HAGAVIK",
+      "adresse": [ "Skeisleira 122" ],
+      "kommune": "OS",
+      "kommunenummer": "1243"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811566942",
+    "navn": "KJERSTIN ANETTE KRÅGÅ",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-02-14",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Avvirkning",
+      "kode": "02.200"
+    },
+    "naeringskode2": {
+      "beskrivelse": "Dyrking av ettårige vekster ellers",
+      "kode": "01.190"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "2450",
+      "poststed": "RENA",
+      "adresse": [ "Olav Nergaards Vei 264" ],
+      "kommune": "ÅMOT",
+      "kommunenummer": "0429"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811567612",
+    "navn": "KURDISK KULTURSENTER",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-02-14",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Aktiviteter i andre interesseorganisasjoner ikke nevnt annet sted",
+      "kode": "94.991"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "4306",
+      "poststed": "SANDNES",
+      "adresse": [ "Julie Eges gate 18" ],
+      "kommune": "SANDNES",
+      "kommunenummer": "1102"
+    },
+    "stiftelsesdato": "2013-01-02",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811568732",
+    "navn": "IHM P/S",
+    "organisasjonsform": {
+      "kode": "NUF",
+      "beskrivelse": "Norskregistrert utenlandsk foretak",
+      "links": []
+    },
+    "postadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "2001",
+      "poststed": "LILLESTRØM",
+      "adresse": [ "c/o Regnskapsservice AS", "Postboks 273" ],
+      "kommune": "SKEDSMO",
+      "kommunenummer": "0231"
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-02",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Produksjon av kommunikasjonsutstyr",
+      "kode": "26.300"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Danmark",
+      "landkode": "DK",
+      "poststed": "2860 Söborg",
+      "adresse": [ "Vandtaarnvej 87" ]
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811569402",
+    "navn": "LIAHØIS VENNER",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-02-26",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Aktiviteter i andre interesseorganisasjoner ikke nevnt annet sted",
+      "kode": "94.991"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "1407",
+      "poststed": "VINTERBRO",
+      "adresse": [ "Askehaugveien 150" ],
+      "kommune": "ÅS",
+      "kommunenummer": "0214"
+    },
+    "stiftelsesdato": "2012-03-28",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": true,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811571172",
+    "navn": "IBBY ROAD IBEN AKERLIE",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-02-16",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Utøvende kunstnere og underholdningsvirksomhet innen scenekunst",
+      "kode": "90.012"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0559",
+      "poststed": "OSLO",
+      "adresse": [ "Sverdrups gate 7B" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811576662",
+    "navn": "VESTAKSEN SENTRUM AS",
+    "organisasjonsform": {
+      "kode": "AS",
+      "beskrivelse": "Aksjeselskap",
+      "links": []
+    },
+    "hjemmeside": "www.vestaksen.no",
+    "registreringsdatoEnhetsregisteret": "1995-02-19",
+    "registrertIMvaregisteret": true,
+    "frivilligMvaRegistrertBeskrivelser": [ "Utleier av bygg eller anlegg" ],
+    "naeringskode1": {
+      "beskrivelse": "Utleie av egen eller leid fast eiendom ellers",
+      "kode": "68.209"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3015",
+      "poststed": "DRAMMEN",
+      "adresse": [ "Erik Børresens alle 7" ],
+      "kommune": "DRAMMEN",
+      "kommunenummer": "0602"
+    },
+    "stiftelsesdato": "1965-04-05",
+    "institusjonellSektorkode": {
+      "kode": "2100",
+      "beskrivelse": "Private aksjeselskaper mv."
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "sisteInnsendteAarsregnskap": "2017",
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811577502",
+    "navn": "BRØNNØY BARNETEATER",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-04",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Utøvende kunstnere og underholdningsvirksomhet innen scenekunst",
+      "kode": "90.012"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "8900",
+      "poststed": "BRØNNØYSUND",
+      "adresse": [ "Engveien 4" ],
+      "kommune": "BRØNNØY",
+      "kommunenummer": "1813"
+    },
+    "stiftelsesdato": "2012-06-10",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": true,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811582662",
+    "navn": "MEDIA SAUGE",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-02-18",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Fotografvirksomhet",
+      "kode": "74.200"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0259",
+      "poststed": "OSLO",
+      "adresse": [ "President Harbitz' gate 15C" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811583162",
+    "navn": "SVEIN MIDTSKOGEN IT / MEDIA",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-02-18",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Trådløs telekommunikasjon",
+      "kode": "61.200"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3050",
+      "poststed": "MJØNDALEN",
+      "adresse": [ "Hagatjernveien 8A" ],
+      "kommune": "NEDRE EIKER",
+      "kommunenummer": "0625"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811586412",
+    "navn": "BAKKEN VEL",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "hjemmeside": "www.facebook.com/groups/113195298701747/?fref=ts",
+    "registreringsdatoEnhetsregisteret": "2013-02-23",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Aktiviteter i andre interesseorganisasjoner ikke nevnt annet sted",
+      "kode": "94.991"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3725",
+      "poststed": "SKIEN",
+      "adresse": [ "Eilert Sundts gate 28" ],
+      "kommune": "SKIEN",
+      "kommunenummer": "0806"
+    },
+    "stiftelsesdato": "2012-03-28",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": true,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811587052",
+    "navn": "VEVRING MONTESSORISKULE SA",
+    "organisasjonsform": {
+      "kode": "SA",
+      "beskrivelse": "Samvirkeforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-14",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Ordinær grunnskoleundervisning",
+      "kode": "85.201"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "6817",
+      "poststed": "NAUSTDAL",
+      "adresse": [ "c/o Terje Sekse Horne", "Horne" ],
+      "kommune": "NAUSTDAL",
+      "kommunenummer": "1433"
+    },
+    "stiftelsesdato": "2013-02-26",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Nynorsk",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811599182",
+    "navn": "CASH UP FRONT",
+    "organisasjonsform": {
+      "kode": "NUF",
+      "beskrivelse": "Norskregistrert utenlandsk foretak",
+      "links": []
+    },
+    "hjemmeside": "www.cufcard.com",
+    "postadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "1396",
+      "poststed": "BILLINGSTAD",
+      "adresse": [ "Åstadryggen 17" ],
+      "kommune": "ASKER",
+      "kommunenummer": "0220"
+    },
+    "registreringsdatoEnhetsregisteret": "2013-07-31",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Annen finansieringsvirksomhet ikke nevnt annet sted",
+      "kode": "64.990"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Storbritannia",
+      "landkode": "GB",
+      "poststed": "NN3 6WL Northampton",
+      "adresse": [ "2 Redhouse Square" ]
+    },
+    "institusjonellSektorkode": {
+      "kode": "4900",
+      "beskrivelse": "Øvrige finansielle foretak unntatt forsikring"
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811599832",
+    "navn": "GEOSPACE ENGINEERING RESOURCES INTERNATIONAL, INC.",
+    "organisasjonsform": {
+      "kode": "NUF",
+      "beskrivelse": "Norskregistrert utenlandsk foretak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-04",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Annen spesialisert bygge- og anleggsvirksomhet",
+      "kode": "43.990"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "USA",
+      "landkode": "US",
+      "poststed": "HOUSTON, TEXAS 77040",
+      "adresse": [ "7007 Pinemont Drive" ]
+    },
+    "institusjonellSektorkode": {
+      "kode": "2100",
+      "beskrivelse": "Private aksjeselskaper mv."
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811608602",
+    "navn": "UNDERSTELLSERVICE AS",
+    "organisasjonsform": {
+      "kode": "AS",
+      "beskrivelse": "Aksjeselskap",
+      "links": []
+    },
+    "postadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3201",
+      "poststed": "SANDEFJORD",
+      "adresse": [ "Postboks 260" ],
+      "kommune": "SANDEFJORD",
+      "kommunenummer": "0710"
+    },
+    "registreringsdatoEnhetsregisteret": "2013-02-23",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Vedlikehold og reparasjon av motorvogner, unntatt motorsykler",
+      "kode": "45.200"
+    },
+    "antallAnsatte": 1,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3236",
+      "poststed": "SANDEFJORD",
+      "adresse": [ "Østerøyveien 31" ],
+      "kommune": "SANDEFJORD",
+      "kommunenummer": "0710"
+    },
+    "stiftelsesdato": "2013-01-01",
+    "institusjonellSektorkode": {
+      "kode": "2100",
+      "beskrivelse": "Private aksjeselskaper mv."
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "sisteInnsendteAarsregnskap": "2017",
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811613002",
+    "navn": "SVEN EIVIND JORFALD",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-02-25",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Tjenester tilknyttet underholdningsvirksomhet",
+      "kode": "90.020"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0273",
+      "poststed": "OSLO",
+      "adresse": [ "Nobels gate 8" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811613452",
+    "navn": "OLE KRISTIAN FLATØY",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-02-25",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Andre sportsaktiviteter",
+      "kode": "93.190"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "4626",
+      "poststed": "KRISTIANSAND S",
+      "adresse": [ "Kartheia 67C" ],
+      "kommune": "KRISTIANSAND",
+      "kommunenummer": "1001"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811618292",
+    "navn": "HØGNI KOMPETANSE ARASON",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-02-26",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Undervisning innen idrett og rekreasjon",
+      "kode": "85.510"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3517",
+      "poststed": "HØNEFOSS",
+      "adresse": [ "Solveien 2" ],
+      "kommune": "RINGERIKE",
+      "kommunenummer": "0605"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811619752",
+    "navn": "GLENNE RÅDGIVNING GJERMUND HANSTEN AASGAARD",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-02-26",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning",
+      "kode": "70.220"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "1781",
+      "poststed": "HALDEN",
+      "adresse": [ "Glenneveien 27" ],
+      "kommune": "HALDEN",
+      "kommunenummer": "0101"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811623962",
+    "navn": "HUNDEKROKEN AMANDA THORESEN",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "hjemmeside": "www.hundekroken.no",
+    "registreringsdatoEnhetsregisteret": "2013-02-27",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Postordre-/Internetthandel med annet spesialisert vareutvalg",
+      "kode": "47.919"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3187",
+      "poststed": "HORTEN",
+      "adresse": [ "Apotekergata 18" ],
+      "kommune": "HORTEN",
+      "kommunenummer": "0701"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811626252",
+    "navn": "HEIDI KVAREKVÅL",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-02-27",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Annen undervisning ikke nevnt annet sted",
+      "kode": "85.599"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "5052",
+      "poststed": "BERGEN",
+      "adresse": [ "St. Halvards vei 26" ],
+      "kommune": "BERGEN",
+      "kommunenummer": "1201"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811631272",
+    "navn": "CRASSA AS TVANGSAVVIKLINGSBO",
+    "organisasjonsform": {
+      "kode": "KBO",
+      "beskrivelse": "Konkursbo",
+      "links": []
+    },
+    "postadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3192",
+      "poststed": "HORTEN",
+      "adresse": [ "v/Adv. Øivind Rief Armo", "Postboks 264", " " ],
+      "kommune": "HORTEN",
+      "kommunenummer": "0701"
+    },
+    "registreringsdatoEnhetsregisteret": "2013-02-28",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Annen undervisning ikke nevnt annet sted",
+      "kode": "85.599"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3187",
+      "poststed": "HORTEN",
+      "adresse": [ "Thranes gate 4" ],
+      "kommune": "HORTEN",
+      "kommunenummer": "0701"
+    },
+    "stiftelsesdato": "2013-02-26",
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811632562",
+    "navn": "GAPPAY NORGE LINDAHL",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-02-28",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Personlig tjenesteyting ikke nevnt annet sted",
+      "kode": "96.090"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "1621",
+      "poststed": "GRESSVIK",
+      "adresse": [ "Husebyveien 55" ],
+      "kommune": "FREDRIKSTAD",
+      "kommunenummer": "0106"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811637432",
+    "navn": "FINNSJOE SAILING",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "hjemmeside": "captainharald.com",
+    "registreringsdatoEnhetsregisteret": "2013-03-15",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Utenriks sjøfart med passasjerer",
+      "kode": "50.101"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3153",
+      "poststed": "TOLVSRØD",
+      "adresse": [ "Brekkelia 20" ],
+      "kommune": "TØNSBERG",
+      "kommunenummer": "0704"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811637742",
+    "navn": "HRX KJERSTI JØRGENSEN",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-06",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning",
+      "kode": "70.220"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0376",
+      "poststed": "OSLO",
+      "adresse": [ "Vestre Holmen vei 2A" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811638692",
+    "navn": "BJERKEHAGEN ANS",
+    "organisasjonsform": {
+      "kode": "ANS",
+      "beskrivelse": "Ansvarlig selskap med solidarisk ansvar",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-02",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Oppdrett av annet storfe",
+      "kode": "01.420"
+    },
+    "antallAnsatte": 1,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "2647",
+      "poststed": "SØR-FRON",
+      "adresse": [ "Bergevegen 216" ],
+      "kommune": "SØR-FRON",
+      "kommunenummer": "0519"
+    },
+    "stiftelsesdato": "2013-02-27",
+    "institusjonellSektorkode": {
+      "kode": "2300",
+      "beskrivelse": "Personlige foretak"
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811640042",
+    "navn": "LINA SKIPPERVOLD-HANSEN",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-13",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Annen forebyggende helsetjeneste",
+      "kode": "86.904"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3830",
+      "poststed": "ULEFOSS",
+      "adresse": [ "Hollavegen 47" ],
+      "kommune": "NOME",
+      "kommunenummer": "0819"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811640522",
+    "navn": "ENZIAN AS",
+    "organisasjonsform": {
+      "kode": "AS",
+      "beskrivelse": "Aksjeselskap",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-02",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Kjøp og salg av egen fast eiendom",
+      "kode": "68.100"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0779",
+      "poststed": "OSLO",
+      "adresse": [ "Stjerneveien 40A" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "stiftelsesdato": "2013-02-13",
+    "institusjonellSektorkode": {
+      "kode": "2100",
+      "beskrivelse": "Private aksjeselskaper mv."
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "sisteInnsendteAarsregnskap": "2017",
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811641332",
+    "navn": "EAST KURDISTAN INDEPENDENT PARTY",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "hjemmeside": "www.serbesti.info",
+    "registreringsdatoEnhetsregisteret": "2013-05-11",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Partipolitiske organisasjoner",
+      "kode": "94.920"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0586",
+      "poststed": "OSLO",
+      "adresse": [ "Sinsenveien 64C" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "stiftelsesdato": "2013-02-28",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811644722",
+    "navn": "KIDZ FOTO RUNE EVJEBERG",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "hjemmeside": "www.kidz-foto.no",
+    "registreringsdatoEnhetsregisteret": "2013-03-04",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Fotografvirksomhet",
+      "kode": "74.200"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "4083",
+      "poststed": "HUNDVÅG",
+      "adresse": [ "Klappmyssveien 57" ],
+      "kommune": "STAVANGER",
+      "kommunenummer": "1103"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811648612",
+    "navn": "ELISABETH SKOGSETH",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-16",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Selvstendig kunstnerisk virksomhet ikke nevnt annet sted",
+      "kode": "90.039"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "5136",
+      "poststed": "MJØLKERÅEN",
+      "adresse": [ "Nordre Toppe 29" ],
+      "kommune": "BERGEN",
+      "kommunenummer": "1201"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811650382",
+    "navn": "GJERDSETBYGDA VEGLAG SA",
+    "organisasjonsform": {
+      "kode": "SA",
+      "beskrivelse": "Samvirkeforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2014-08-21",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Eiendomsforvaltning",
+      "kode": "68.320"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "6320",
+      "poststed": "ISFJORDEN",
+      "adresse": [ "Gjerdsetbygda" ],
+      "kommune": "RAUMA",
+      "kommunenummer": "1539"
+    },
+    "stiftelsesdato": "1994-02-07",
+    "institusjonellSektorkode": {
+      "kode": "2100",
+      "beskrivelse": "Private aksjeselskaper mv."
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Nynorsk",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811655252",
+    "navn": "MD SØRENSEN",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-05",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Allmenn legetjeneste",
+      "kode": "86.211"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3413",
+      "poststed": "LIER",
+      "adresse": [ "Apalveien 8" ],
+      "kommune": "LIER",
+      "kommunenummer": "0626"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811655422",
+    "navn": "GUNNAR PEDERSEN",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-14",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Avvirkning",
+      "kode": "02.200"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "2266",
+      "poststed": "ARNEBERG",
+      "adresse": [ "Opåsvegen 29" ],
+      "kommune": "ÅSNES",
+      "kommunenummer": "0425"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811656232",
+    "navn": "NES FORFATTER FORENING",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-05",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Aktiviteter i andre interesseorganisasjoner ikke nevnt annet sted",
+      "kode": "94.991"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "1666",
+      "poststed": "ROLVSØY",
+      "adresse": [ "Elvenesveien 17" ],
+      "kommune": "FREDRIKSTAD",
+      "kommunenummer": "0106"
+    },
+    "stiftelsesdato": "2013-03-03",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811656682",
+    "navn": "TRELASTEN ELVERUM AS",
+    "organisasjonsform": {
+      "kode": "AS",
+      "beskrivelse": "Aksjeselskap",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-05",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Butikkhandel med trelast",
+      "kode": "47.524"
+    },
+    "antallAnsatte": 8,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "2450",
+      "poststed": "RENA",
+      "adresse": [ "Hovdmoveien 1" ],
+      "kommune": "ÅMOT",
+      "kommunenummer": "0429"
+    },
+    "stiftelsesdato": "2013-02-13",
+    "institusjonellSektorkode": {
+      "kode": "2100",
+      "beskrivelse": "Private aksjeselskaper mv."
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "sisteInnsendteAarsregnskap": "2017",
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811656992",
+    "navn": "LIVERBIRDS SARPSBORG",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "hjemmeside": "www.facebook.com/LiverbirdsSarpsborg",
+    "registreringsdatoEnhetsregisteret": "2013-03-07",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Aktiviteter i andre interesseorganisasjoner ikke nevnt annet sted",
+      "kode": "94.991"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "1734",
+      "poststed": "HAFSLUNDSØY",
+      "adresse": [ "c/o Jaran Sæves", "Nesveien 40" ],
+      "kommune": "SARPSBORG",
+      "kommunenummer": "0105"
+    },
+    "stiftelsesdato": "2012-10-05",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": true,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811659622",
+    "navn": "GURO LYSAKER NÆSS",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-05",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Utøvende kunstnere og underholdningsvirksomhet innen musikk",
+      "kode": "90.011"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3050",
+      "poststed": "MJØNDALEN",
+      "adresse": [ "Nedbergkollveien 32" ],
+      "kommune": "NEDRE EIKER",
+      "kommunenummer": "0625"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811660752",
+    "navn": "GRESSVIK HÅRSENTER STINE HALVORSEN",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-06",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Frisering og annen skjønnhetspleie",
+      "kode": "96.020"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "1621",
+      "poststed": "GRESSVIK",
+      "adresse": [ "Gressvik torg 18" ],
+      "kommune": "FREDRIKSTAD",
+      "kommunenummer": "0106"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811661112",
+    "navn": "TL SALONGENE AS",
+    "organisasjonsform": {
+      "kode": "AS",
+      "beskrivelse": "Aksjeselskap",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-06",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Butikkhandel med kosmetikk og toalettartikler",
+      "kode": "47.750"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0461",
+      "poststed": "OSLO",
+      "adresse": [ "Maridalsveien 91" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "stiftelsesdato": "2013-02-20",
+    "institusjonellSektorkode": {
+      "kode": "2100",
+      "beskrivelse": "Private aksjeselskaper mv."
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "sisteInnsendteAarsregnskap": "2017",
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811661252",
+    "navn": "JONAS EVENSEN",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-06",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Utøvende kunstnere og underholdningsvirksomhet innen musikk",
+      "kode": "90.011"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "9403",
+      "poststed": "HARSTAD",
+      "adresse": [ "Skogveien 22" ],
+      "kommune": "HARSTAD",
+      "kommunenummer": "1903"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811661902",
+    "navn": "DAIT&KAUSHAL DA",
+    "organisasjonsform": {
+      "kode": "DA",
+      "beskrivelse": "Ansvarlig selskap med delt ansvar",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-13",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Butikkhandel med nærings- og nytelsesmidler ikke nevnt annet sted",
+      "kode": "47.299"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0278",
+      "poststed": "OSLO",
+      "adresse": [ "C/O Deli de Luca Norge AS", "Karenslyst Allè 12-14" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "stiftelsesdato": "2013-01-24",
+    "institusjonellSektorkode": {
+      "kode": "2300",
+      "beskrivelse": "Personlige foretak"
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811662232",
+    "navn": "SJURSNES HYTTEFORENING",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-07-25",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Eiendomsforvaltning",
+      "kode": "68.320"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "9517",
+      "poststed": "ALTA",
+      "adresse": [ "Aspesvingen 17" ],
+      "kommune": "ALTA",
+      "kommunenummer": "2012"
+    },
+    "stiftelsesdato": "2013-02-21",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811662712",
+    "navn": "WALTER HEIDKAMP MÅL & MENING",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-06",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning",
+      "kode": "70.220"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0183",
+      "poststed": "OSLO",
+      "adresse": [ "Osterhaus' gate 10" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811664332",
+    "navn": "KEN ROBIN JACOBSEN BYGG",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-16",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Oppføring av bygninger",
+      "kode": "41.200"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3855",
+      "poststed": "TREUNGEN",
+      "adresse": [ "Høgfoss 32" ],
+      "kommune": "NISSEDAL",
+      "kommunenummer": "0830"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811668052",
+    "navn": "THOMAS DALEN CINEMATOGRAPHER",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-07",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Produksjon av film, video og fjernsynsprogrammer",
+      "kode": "59.110"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "5006",
+      "poststed": "BERGEN",
+      "adresse": [ "Ole Vigs gate 17" ],
+      "kommune": "BERGEN",
+      "kommunenummer": "1201"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811669172",
+    "navn": "DJ SAM COMPTON",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-07",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Tjenester tilknyttet underholdningsvirksomhet",
+      "kode": "90.020"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "4628",
+      "poststed": "KRISTIANSAND S",
+      "adresse": [ "Tjuvhelleren 2E" ],
+      "kommune": "KRISTIANSAND",
+      "kommunenummer": "1001"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Nynorsk",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811669962",
+    "navn": "HUNDEKONSULENT TORA FISKAA HANSEN",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "hjemmeside": "www.hundekonsulent.com",
+    "registreringsdatoEnhetsregisteret": "2013-03-07",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Personlig tjenesteyting ikke nevnt annet sted",
+      "kode": "96.090"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "5134",
+      "poststed": "FLAKTVEIT",
+      "adresse": [ "Ulvhøyen 41" ],
+      "kommune": "BERGEN",
+      "kommunenummer": "1201"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811674052",
+    "navn": "DQHELSE HANNE DAAE-QVALE HOLMEMO",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-09",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Undervisning innen idrett og rekreasjon",
+      "kode": "85.510"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0172",
+      "poststed": "OSLO",
+      "adresse": [ "c/o Hanne Daae-Qvale Holmemo", "Bergstien 16C" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811678082",
+    "navn": "DUBRAVO APS",
+    "organisasjonsform": {
+      "kode": "NUF",
+      "beskrivelse": "Norskregistrert utenlandsk foretak",
+      "links": []
+    },
+    "postadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0306",
+      "poststed": "OSLO",
+      "adresse": [ "c/o KPMG Tax AS", "Postboks 7000 Majorstuen" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-03",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Utleie av arbeidskraft",
+      "kode": "78.200"
+    },
+    "antallAnsatte": 0,
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811680192",
+    "navn": "FIESTA CONSULTING BIRGER SOLBAKK",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-04",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Reklamebyråer",
+      "kode": "73.110"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0360",
+      "poststed": "OSLO",
+      "adresse": [ "Leil 501", "Fagerborggata 44" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811682802",
+    "navn": "RT MAGNUS DEN GODE",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "postadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3619",
+      "poststed": "SKOLLENBORG",
+      "adresse": [ "c/o Arne Gran", "Skollenborgveien 20" ],
+      "kommune": "KONGSBERG",
+      "kommunenummer": "0604"
+    },
+    "registreringsdatoEnhetsregisteret": "2013-05-23",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Aktiviteter i andre interesseorganisasjoner ikke nevnt annet sted",
+      "kode": "94.991"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3616",
+      "poststed": "KONGSBERG",
+      "adresse": [ "Logegården Kongsberg AS", "Kirkegata 9" ],
+      "kommune": "KONGSBERG",
+      "kommunenummer": "0604"
+    },
+    "stiftelsesdato": "1954-04-04",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": true,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811683272",
+    "navn": "GARD & PENSEL AASE ELISE CASTBERG",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-20",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Sauehold",
+      "kode": "01.451"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "6105",
+      "poststed": "VOLDA",
+      "adresse": [ "Liaskarvegen 55" ],
+      "kommune": "VOLDA",
+      "kommunenummer": "1519"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Nynorsk",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811683922",
+    "navn": "SOUMAH RENHOLD SEKOU",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-19",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Rengjøring av bygninger",
+      "kode": "81.210"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3044",
+      "poststed": "DRAMMEN",
+      "adresse": [ "Lærums gate 4B" ],
+      "kommune": "DRAMMEN",
+      "kommunenummer": "0602"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811686522",
+    "navn": "TORA SYNNØVE UHRN",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "hjemmeside": "www.torauhrn.com",
+    "registreringsdatoEnhetsregisteret": "2013-03-11",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Selvstendig kunstnerisk virksomhet innen visuell kunst",
+      "kode": "90.031"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0561",
+      "poststed": "OSLO",
+      "adresse": [ "Herslebs gate 15A" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811688452",
+    "navn": "EVENES AUTOSENTER THORE STUNES",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-12",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Bearbeiding av metaller",
+      "kode": "25.620"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "8535",
+      "poststed": "TÅRSTAD",
+      "adresse": [ "Korsveien 108" ],
+      "kommune": "EVENES",
+      "kommunenummer": "1853"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811688762",
+    "navn": "FOLKEAKSJONEN FOR JERNBANEFRI STRANDSONE I HAMAR",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "hjemmeside": "www.jernbaneihamar.com/",
+    "registreringsdatoEnhetsregisteret": "2013-03-12",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Aktiviteter i andre interesseorganisasjoner ikke nevnt annet sted",
+      "kode": "94.991"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "2315",
+      "poststed": "HAMAR",
+      "adresse": [ "v/ Magnus Holm-Gjerde", "Storhamargata 85" ],
+      "kommune": "HAMAR",
+      "kommunenummer": "0403"
+    },
+    "stiftelsesdato": "2013-02-26",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": true,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811690252",
+    "navn": "BRUKTBIL FORUM/ELZABOUT",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-12",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Detaljhandel med biler og lette motorvogner, unntatt motorsykler",
+      "kode": "45.112"
+    },
+    "antallAnsatte": 1,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "4886",
+      "poststed": "GRIMSTAD",
+      "adresse": [ "Reddalsveien 71" ],
+      "kommune": "GRIMSTAD",
+      "kommunenummer": "0904"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811693502",
+    "navn": "ESPEN ANDRE HANSEN",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-12",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Oppføring av bygninger",
+      "kode": "41.200"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3050",
+      "poststed": "MJØNDALEN",
+      "adresse": [ "Bråtaveien 34" ],
+      "kommune": "NEDRE EIKER",
+      "kommunenummer": "0625"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811694142",
+    "navn": "EIVIND KLEMOEN",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "postadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "2618",
+      "poststed": "LILLEHAMMER",
+      "adresse": [ "Jernvinna 39" ],
+      "kommune": "LILLEHAMMER",
+      "kommunenummer": "0501"
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-13",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Undervisning innen idrett og rekreasjon",
+      "kode": "85.510"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "2880",
+      "poststed": "NORD-TORPA",
+      "adresse": [ "Synnfjellvegen 38" ],
+      "kommune": "NORDRE LAND",
+      "kommunenummer": "0538"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811694762",
+    "navn": "TEKNA BEDRIFTSGRUPPE KVÆRNER JACKET TECHNOLOGY TRONDHEIM",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "postadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "7462",
+      "poststed": "TRONDHEIM",
+      "adresse": [ "Postboks 1229" ],
+      "kommune": "TRONDHEIM",
+      "kommunenummer": "5001"
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-13",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Arbeidstakerorganisasjoner",
+      "kode": "94.200"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "7010",
+      "poststed": "TRONDHEIM",
+      "adresse": [ "Havnegata 9" ],
+      "kommune": "TRONDHEIM",
+      "kommunenummer": "5001"
+    },
+    "stiftelsesdato": "2013-03-04",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811695122",
+    "navn": "TF VEDLIKEHOLD TOMMY FJÆREIDE",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-13",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Tjenester tilknyttet landtransport ellers",
+      "kode": "52.219"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "5378",
+      "poststed": "KLOKKARVIK",
+      "adresse": [ "Kleppesjøen 41" ],
+      "kommune": "SUND",
+      "kommunenummer": "1245"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Nynorsk",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811702072",
+    "navn": "SAMEIGET POSTGARDEN",
+    "organisasjonsform": {
+      "kode": "ESEK",
+      "beskrivelse": "Eierseksjonssameie",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-07-03",
+    "registrertIMvaregisteret": false,
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "6817",
+      "poststed": "NAUSTDAL",
+      "adresse": [ "v/ Magne Dvergsdal", "Tunavegen 21D" ],
+      "kommune": "NAUSTDAL",
+      "kommunenummer": "1433"
+    },
+    "stiftelsesdato": "2002-06-04",
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Nynorsk",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811702412",
+    "navn": "FAU VED SOLBAKKEN SKOLE",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2015-12-28",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Aktiviteter i andre interesseorganisasjoner ikke nevnt annet sted",
+      "kode": "94.991"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "7057",
+      "poststed": "JONSVATNET",
+      "adresse": [ "c/o Dag Eirik Nordgård", "Fortunalia 55" ],
+      "kommune": "TRONDHEIM",
+      "kommunenummer": "5001"
+    },
+    "stiftelsesdato": "2015-12-10",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811705942",
+    "navn": "KLEV SETERSKOG VEILAG",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-06-05",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Eiendomsforvaltning",
+      "kode": "68.320"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3046",
+      "poststed": "DRAMMEN",
+      "adresse": [ "Blektjernveien 39" ],
+      "kommune": "DRAMMEN",
+      "kommunenummer": "0602"
+    },
+    "stiftelsesdato": "2013-02-09",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811708402",
+    "navn": "HARØY FOTOKLUBB",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "postadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "6487",
+      "poststed": "HARØY",
+      "adresse": [ "Harneshaug" ],
+      "kommune": "SANDØY",
+      "kommunenummer": "1546"
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-18",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Aktiviteter i andre interesseorganisasjoner ikke nevnt annet sted",
+      "kode": "94.991"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "6487",
+      "poststed": "HARØY",
+      "adresse": [],
+      "kommune": "SANDØY",
+      "kommunenummer": "1546"
+    },
+    "stiftelsesdato": "2013-03-13",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811711152",
+    "navn": "VELANTIC MARITIME SERVICES AS",
+    "organisasjonsform": {
+      "kode": "AS",
+      "beskrivelse": "Aksjeselskap",
+      "links": []
+    },
+    "hjemmeside": "www.velantic.no",
+    "registreringsdatoEnhetsregisteret": "2013-04-16",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Skipsmegling",
+      "kode": "52.292"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3157",
+      "poststed": "BARKÅKER",
+      "adresse": [ "Wirgenes vei 3" ],
+      "kommune": "TØNSBERG",
+      "kommunenummer": "0704"
+    },
+    "stiftelsesdato": "2013-03-04",
+    "institusjonellSektorkode": {
+      "kode": "2100",
+      "beskrivelse": "Private aksjeselskaper mv."
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "sisteInnsendteAarsregnskap": "2016",
+    "konkurs": true,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811711322",
+    "navn": "BAS BJARTE ANDRE STAMNES",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-02",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Godstransport på vei",
+      "kode": "49.410"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "5532",
+      "poststed": "HAUGESUND",
+      "adresse": [ "Leiv Eirikssons gate 5" ],
+      "kommune": "HAUGESUND",
+      "kommunenummer": "1106"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811720682",
+    "navn": "VESTNES HUSFLIDSLAG",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-19",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Aktiviteter i andre interesseorganisasjoner ikke nevnt annet sted",
+      "kode": "94.991"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "6390",
+      "poststed": "VESTNES",
+      "adresse": [ "Skogvegen 7" ],
+      "kommune": "VESTNES",
+      "kommunenummer": "1535"
+    },
+    "stiftelsesdato": "1985-09-02",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": true,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811724912",
+    "navn": "OCA AS",
+    "organisasjonsform": {
+      "kode": "AS",
+      "beskrivelse": "Aksjeselskap",
+      "links": []
+    },
+    "hjemmeside": "www.aurednik.no",
+    "postadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "1816",
+      "poststed": "SKIPTVET",
+      "adresse": [ "Koffeldveien 1A" ],
+      "kommune": "SKIPTVET",
+      "kommunenummer": "0127"
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-19",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Engroshandel med møbler",
+      "kode": "46.471"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "1591",
+      "poststed": "SPERREBOTN",
+      "adresse": [ "Sønsterødveien 82" ],
+      "kommune": "VÅLER",
+      "kommunenummer": "0137"
+    },
+    "stiftelsesdato": "2013-03-06",
+    "institusjonellSektorkode": {
+      "kode": "2100",
+      "beskrivelse": "Private aksjeselskaper mv."
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "sisteInnsendteAarsregnskap": "2015",
+    "konkurs": true,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811727962",
+    "navn": "STOREBOTN UTLEIE AS",
+    "organisasjonsform": {
+      "kode": "AS",
+      "beskrivelse": "Aksjeselskap",
+      "links": []
+    },
+    "postadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "5327",
+      "poststed": "HAUGLANDSHELLA",
+      "adresse": [ "Postboks 28" ],
+      "kommune": "ASKØY",
+      "kommunenummer": "1247"
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-20",
+    "registrertIMvaregisteret": true,
+    "frivilligMvaRegistrertBeskrivelser": [ "Utleier av bygg eller anlegg" ],
+    "naeringskode1": {
+      "beskrivelse": "Utleie av egen eller leid fast eiendom ellers",
+      "kode": "68.209"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "5309",
+      "poststed": "KLEPPESTØ",
+      "adresse": [ "Storebotn 58" ],
+      "kommune": "ASKØY",
+      "kommunenummer": "1247"
+    },
+    "stiftelsesdato": "2013-02-26",
+    "institusjonellSektorkode": {
+      "kode": "2100",
+      "beskrivelse": "Private aksjeselskaper mv."
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "sisteInnsendteAarsregnskap": "2017",
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811729612",
+    "navn": "MASJID AL-TOWHID",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-20",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Religiøse organisasjoner",
+      "kode": "94.910"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "8900",
+      "poststed": "BRØNNØYSUND",
+      "adresse": [ "Storgata 55" ],
+      "kommune": "BRØNNØY",
+      "kommunenummer": "1813"
+    },
+    "stiftelsesdato": "2013-03-13",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811729752",
+    "navn": "BOLIGSAMEIET GAMLE KIRKEVEI 70 BCD",
+    "organisasjonsform": {
+      "kode": "ESEK",
+      "beskrivelse": "Eierseksjonssameie",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-09",
+    "registrertIMvaregisteret": false,
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "1617",
+      "poststed": "FREDRIKSTAD",
+      "adresse": [ "Gamle Kirkevei 70C" ],
+      "kommune": "FREDRIKSTAD",
+      "kommunenummer": "0106"
+    },
+    "stiftelsesdato": "2012-11-05",
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811730882",
+    "navn": "SANDVIK FYSIOTERAPI",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-20",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Fysioterapitjeneste",
+      "kode": "86.902"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "1791",
+      "poststed": "TISTEDAL",
+      "adresse": [ "Liljeveien 8" ],
+      "kommune": "HALDEN",
+      "kommunenummer": "0101"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811731072",
+    "navn": "ALBRIKTSEN UNDERVISNING",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-20",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Annen undervisning ikke nevnt annet sted",
+      "kode": "85.599"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "7052",
+      "poststed": "TRONDHEIM",
+      "adresse": [ "Jonsvannsveien 70" ],
+      "kommune": "TRONDHEIM",
+      "kommunenummer": "5001"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811731412",
+    "navn": "SLAABERVIGS VENNER",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "postadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "4816",
+      "poststed": "KOLBJØRNSVIK",
+      "adresse": [ "c/o Hans Øyvind Leikvin", "Slaabervig 49" ],
+      "kommune": "ARENDAL",
+      "kommunenummer": "0906"
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-25",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Aktiviteter i andre interesseorganisasjoner ikke nevnt annet sted",
+      "kode": "94.991"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "4816",
+      "poststed": "KOLBJØRNSVIK",
+      "adresse": [ "Slaabervig" ],
+      "kommune": "ARENDAL",
+      "kommunenummer": "0906"
+    },
+    "stiftelsesdato": "2013-03-04",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": true,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811734772",
+    "navn": "HEGGE CONSULTING",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-21",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Undervisning innen idrett og rekreasjon",
+      "kode": "85.510"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "7021",
+      "poststed": "TRONDHEIM",
+      "adresse": [ "Dickaunsvingen 13" ],
+      "kommune": "TRONDHEIM",
+      "kommunenummer": "5001"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811741892",
+    "navn": "VETERINÆR JUNI LANGEN",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-23",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Veterinærtjenester",
+      "kode": "75.000"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0469",
+      "poststed": "OSLO",
+      "adresse": [ "Mor Go'hjertas vei 21" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811743852",
+    "navn": "SÅT BEITELAG",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-03-25",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Tjenester tilknyttet planteproduksjon",
+      "kode": "01.610"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "5563",
+      "poststed": "FØRRESFJORDEN",
+      "adresse": [ "Førresvegen 55" ],
+      "kommune": "TYSVÆR",
+      "kommunenummer": "1146"
+    },
+    "stiftelsesdato": "2013-02-19",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811747262",
+    "navn": "SAMEIET JOHAN MARKUSSENSVEI 25-35",
+    "organisasjonsform": {
+      "kode": "ESEK",
+      "beskrivelse": "Eierseksjonssameie",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-24",
+    "registrertIMvaregisteret": false,
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "4888",
+      "poststed": "HOMBORSUND",
+      "adresse": [ "v/Inger Lise Wehus", "Johan Markussens vei 29" ],
+      "kommune": "GRIMSTAD",
+      "kommunenummer": "0904"
+    },
+    "stiftelsesdato": "1991-01-31",
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811755532",
+    "navn": "UNNI SKRETTEBERG",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-02",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Annen forretningsmessig tjenesteyting ikke nevnt annet sted",
+      "kode": "82.990"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3040",
+      "poststed": "DRAMMEN",
+      "adresse": [ "Solbergs gate 8A" ],
+      "kommune": "DRAMMEN",
+      "kommunenummer": "0602"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811756202",
+    "navn": "STUDIO YPSILON",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "postadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0188",
+      "poststed": "OSLO",
+      "adresse": [ "c/o Frode Hauge", "Smalgangen 24" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-09",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Aktiviteter i andre interesseorganisasjoner ikke nevnt annet sted",
+      "kode": "94.991"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0190",
+      "poststed": "OSLO",
+      "adresse": [ "Grønlandsleiret 55" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "stiftelsesdato": "2013-02-20",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811758442",
+    "navn": "MADS LOHRE",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "hjemmeside": "www.mlohre.com",
+    "registreringsdatoEnhetsregisteret": "2013-04-02",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Selvstendig kunstnerisk virksomhet innen visuell kunst",
+      "kode": "90.031"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "1604",
+      "poststed": "FREDRIKSTAD",
+      "adresse": [ "Lærer Slangs gate 4" ],
+      "kommune": "FREDRIKSTAD",
+      "kommunenummer": "0106"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811759112",
+    "navn": "FURULI SKOGSDRIFT AS",
+    "organisasjonsform": {
+      "kode": "AS",
+      "beskrivelse": "Aksjeselskap",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-02",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Tjenester tilknyttet skogbruk",
+      "kode": "02.400"
+    },
+    "antallAnsatte": 1,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "2560",
+      "poststed": "ALVDAL",
+      "adresse": [ "Plassmoen 195" ],
+      "kommune": "ALVDAL",
+      "kommunenummer": "0438"
+    },
+    "stiftelsesdato": "2013-01-01",
+    "institusjonellSektorkode": {
+      "kode": "2100",
+      "beskrivelse": "Private aksjeselskaper mv."
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "sisteInnsendteAarsregnskap": "2017",
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811759872",
+    "navn": "MIKAEL OLMHUS",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-02",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Melkeproduksjon på storfe",
+      "kode": "01.410"
+    },
+    "antallAnsatte": 1,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "2930",
+      "poststed": "BAGN",
+      "adresse": [ "Hølera", "Briskebyvegen 176" ],
+      "kommune": "SØR-AURDAL",
+      "kommunenummer": "0540"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811760102",
+    "navn": "TID FOR ALT MIA KARINE MARTINSEN",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-02",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Frisering og annen skjønnhetspleie",
+      "kode": "96.020"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "2312",
+      "poststed": "OTTESTAD",
+      "adresse": [ "Midtvegen 9" ],
+      "kommune": "STANGE",
+      "kommunenummer": "0417"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811763322",
+    "navn": "HJERTAAS CONSULTING AS",
+    "organisasjonsform": {
+      "kode": "AS",
+      "beskrivelse": "Aksjeselskap",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-06-11",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Annen teknisk konsulentvirksomhet",
+      "kode": "71.129"
+    },
+    "antallAnsatte": 1,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "5221",
+      "poststed": "NESTTUN",
+      "adresse": [ "Sanddalsvegen 13B" ],
+      "kommune": "BERGEN",
+      "kommunenummer": "1201"
+    },
+    "stiftelsesdato": "2013-01-16",
+    "institusjonellSektorkode": {
+      "kode": "2100",
+      "beskrivelse": "Private aksjeselskaper mv."
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "sisteInnsendteAarsregnskap": "2017",
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811763462",
+    "navn": "MR. NICE PRODUCTIONS JOSÉ FRANCISCO COUTO NASCIMENTO",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-03",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Utøvende kunstnere og underholdningsvirksomhet innen musikk",
+      "kode": "90.011"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0366",
+      "poststed": "OSLO",
+      "adresse": [ "Valkyriegata 13B" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811764752",
+    "navn": "ANDERS HOLM",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-03",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Utleie av egen eller leid fast eiendom ellers",
+      "kode": "68.209"
+    },
+    "naeringskode2": {
+      "beskrivelse": "Avvirkning",
+      "kode": "02.200"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3189",
+      "poststed": "HORTEN",
+      "adresse": [ "Hasselbakken 9A" ],
+      "kommune": "HORTEN",
+      "kommunenummer": "0701"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811764922",
+    "navn": "HONG KONG HOUSE XIN MIN WANG",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-03",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Drift av restauranter og kafeer",
+      "kode": "56.101"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "2317",
+      "poststed": "HAMAR",
+      "adresse": [ "Strandgata 65" ],
+      "kommune": "HAMAR",
+      "kommunenummer": "0403"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811766372",
+    "navn": "FROGNER BEAUTY AND LIFESTYLE INGER ELISABETH SOLEM",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-03",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Frisering og annen skjønnhetspleie",
+      "kode": "96.020"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0263",
+      "poststed": "OSLO",
+      "adresse": [ "404", "Balders gate 4" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811767972",
+    "navn": "BJØRN ARILD SÆTRE",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-04",
+    "registrertIMvaregisteret": true,
+    "frivilligMvaRegistrertBeskrivelser": [ "Bortforpakter av landbrukseiendom" ],
+    "naeringskode1": {
+      "beskrivelse": "Utleie av egen eller leid fast eiendom ellers",
+      "kode": "68.209"
+    },
+    "naeringskode2": {
+      "beskrivelse": "Dyrking av ettårige vekster ellers",
+      "kode": "01.190"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "6392",
+      "poststed": "VIKEBUKT",
+      "adresse": [ "Sætre" ],
+      "kommune": "VESTNES",
+      "kommunenummer": "1535"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811768022",
+    "navn": "STÅLE PETTERSEN",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-06",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Drift av restauranter og kafeer",
+      "kode": "56.101"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "8289",
+      "poststed": "ENGELØYA",
+      "adresse": [ "Vinjen" ],
+      "kommune": "STEIGEN",
+      "kommunenummer": "1848"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811773972",
+    "navn": "MÅSSÅVEGEN VELFORENING",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-17",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Eiendomsforvaltning",
+      "kode": "68.320"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "7227",
+      "poststed": "GIMSE",
+      "adresse": [ "Måssåvegen 23" ],
+      "kommune": "MELHUS",
+      "kommunenummer": "5028"
+    },
+    "stiftelsesdato": "1982-10-18",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811780642",
+    "navn": "BRUHAMMAREN VELFORENING",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-08",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Eiendomsforvaltning",
+      "kode": "68.320"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "4330",
+      "poststed": "ÅLGÅRD",
+      "adresse": [ "Bruneset 14A" ],
+      "kommune": "GJESDAL",
+      "kommunenummer": "1122"
+    },
+    "stiftelsesdato": "2013-01-28",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": true,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811780952",
+    "navn": "T. SOLTUN, M.D.",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-08",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Allmenn legetjeneste",
+      "kode": "86.211"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0876",
+      "poststed": "OSLO",
+      "adresse": [ "Kaj Munks vei 41" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811781282",
+    "navn": "SIV NÆSJE BAKKE",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-08",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Personlig tjenesteyting ikke nevnt annet sted",
+      "kode": "96.090"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "1517",
+      "poststed": "MOSS",
+      "adresse": [ "Th. Kittelsens gate 49" ],
+      "kommune": "MOSS",
+      "kommunenummer": "0104"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811782912",
+    "navn": "KYRKJERINGEN I GURSKEN",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "postadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "6082",
+      "poststed": "GURSKEN",
+      "adresse": [ "c/o Ingrid Johanne Blindheim", "Haugsbygda 63" ],
+      "kommune": "SANDE",
+      "kommunenummer": "1514"
+    },
+    "registreringsdatoEnhetsregisteret": "2013-09-12",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Religiøse organisasjoner",
+      "kode": "94.910"
+    },
+    "antallAnsatte": 0,
+    "stiftelsesdato": "1976-12-31",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Nynorsk",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811790672",
+    "navn": "EINAR ANDREAS SKJELLERUDSVEEN",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-05-22",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Dyrking av kjernefrukter og steinfrukter",
+      "kode": "01.240"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "2614",
+      "poststed": "LILLEHAMMER",
+      "adresse": [ "Hamarvegen 214" ],
+      "kommune": "LILLEHAMMER",
+      "kommunenummer": "0501"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811790702",
+    "navn": "UNITED VETERANS MOTORCYCLE CLUB CHAPTER A REGION EAST",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "hjemmeside": "www.univetsmc.no",
+    "registreringsdatoEnhetsregisteret": "2013-04-09",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Aktiviteter i andre interesseorganisasjoner ikke nevnt annet sted",
+      "kode": "94.991"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3425",
+      "poststed": "REISTAD",
+      "adresse": [ "Brastadveien 56" ],
+      "kommune": "LIER",
+      "kommunenummer": "0626"
+    },
+    "stiftelsesdato": "2012-06-16",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": true,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811791172",
+    "navn": "EMINOV RENHOLD",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-20",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Rengjøring av bygninger",
+      "kode": "81.210"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0152",
+      "poststed": "OSLO",
+      "adresse": [ "Bolignummer H0300", "Tollbugata 8" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811791792",
+    "navn": "FOTOGRAF MORTEN SEGLEM",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "hjemmeside": "ouat.no",
+    "registreringsdatoEnhetsregisteret": "2013-04-09",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Fotografvirksomhet",
+      "kode": "74.200"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "4323",
+      "poststed": "SANDNES",
+      "adresse": [ "Lundegeilen 16" ],
+      "kommune": "SANDNES",
+      "kommunenummer": "1102"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811798002",
+    "navn": "GJØVIK FRISBEEKLUBB",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2014-12-16",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Idrettslag og -klubber",
+      "kode": "93.120"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "2835",
+      "poststed": "RAUFOSS",
+      "adresse": [ "c/o Øystein Storskogen", "Bureiservegen 2" ],
+      "kommune": "VESTRE TOTEN",
+      "kommunenummer": "0529"
+    },
+    "stiftelsesdato": "2014-09-28",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": true,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811798142",
+    "navn": "JENS KARLSSON",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-10",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Engroshandel med vin og brennevin",
+      "kode": "46.341"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3430",
+      "poststed": "SPIKKESTAD",
+      "adresse": [ "Brøholtskogen 123" ],
+      "kommune": "RØYKEN",
+      "kommunenummer": "0627"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811799742",
+    "navn": "HEDDA ANETTE GJERPEN",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "hjemmeside": "www.gjerpen.com",
+    "registreringsdatoEnhetsregisteret": "2013-04-10",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Selvstendig kunstnerisk virksomhet innen visuell kunst",
+      "kode": "90.031"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0379",
+      "poststed": "OSLO",
+      "adresse": [ "Jarlsborgveien 36" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811800562",
+    "navn": "LONGVA VEL",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "postadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "6293",
+      "poststed": "LONGVA",
+      "adresse": [ "Longva Vel", "c/o Rita Kvinge", "Longvafjordvegen 453" ],
+      "kommune": "HARAM",
+      "kommunenummer": "1534"
+    },
+    "registreringsdatoEnhetsregisteret": "2013-12-04",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Aktiviteter i andre interesseorganisasjoner ikke nevnt annet sted",
+      "kode": "94.991"
+    },
+    "antallAnsatte": 0,
+    "stiftelsesdato": "2004-08-31",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": true,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Nynorsk",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811802972",
+    "navn": "CAMERA BERGUM FOTOMAGASINET & CO ANS",
+    "organisasjonsform": {
+      "kode": "ANS",
+      "beskrivelse": "Ansvarlig selskap med solidarisk ansvar",
+      "links": []
+    },
+    "postadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "6852",
+      "poststed": "SOGNDAL",
+      "adresse": [ "Postboks 202" ],
+      "kommune": "SOGNDAL",
+      "kommunenummer": "1420"
+    },
+    "registreringsdatoEnhetsregisteret": "1995-02-19",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Fotografvirksomhet",
+      "kode": "74.200"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "6856",
+      "poststed": "SOGNDAL",
+      "adresse": [ "Sogndal" ],
+      "kommune": "SOGNDAL",
+      "kommunenummer": "1420"
+    },
+    "stiftelsesdato": "1977-04-28",
+    "institusjonellSektorkode": {
+      "kode": "2300",
+      "beskrivelse": "Personlige foretak"
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Nynorsk",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811804592",
+    "navn": "NATURVERNFORBUNDET OSLO ØST",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "hjemmeside": "naturvernforbundet.no/noa/osloost/",
+    "registreringsdatoEnhetsregisteret": "2013-04-11",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Aktiviteter i andre interesseorganisasjoner ikke nevnt annet sted",
+      "kode": "94.991"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0562",
+      "poststed": "OSLO",
+      "adresse": [ "v/ Pernille Hansen", "Jens Bjelkes gate 4A" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "stiftelsesdato": "2012-05-08",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": true,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811804622",
+    "navn": "LEGE JAN-ØYVIND LORGEN",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-11",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Allmenn legetjeneste",
+      "kode": "86.211"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "2209",
+      "poststed": "KONGSVINGER",
+      "adresse": [ "Solbærstien 8" ],
+      "kommune": "KONGSVINGER",
+      "kommunenummer": "0402"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811809462",
+    "navn": "MARGRETE UNELSRØD LARSEN- LEGE",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-13",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Allmenn legetjeneste",
+      "kode": "86.211"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "5310",
+      "poststed": "HAUGLANDSHELLA",
+      "adresse": [ "Davangervegen 115" ],
+      "kommune": "ASKØY",
+      "kommunenummer": "1247"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811809632",
+    "navn": "MRHOLTH.COM BENGT DANIEL FOSLAND HOLTH",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "hjemmeside": "mrholth.com",
+    "registreringsdatoEnhetsregisteret": "2013-04-13",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Konsulentvirksomhet tilknyttet informasjonsteknologi",
+      "kode": "62.020"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3034",
+      "poststed": "DRAMMEN",
+      "adresse": [ "Høgda 2" ],
+      "kommune": "DRAMMEN",
+      "kommunenummer": "0602"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811814652",
+    "navn": "FASTFOODTAXI DA",
+    "organisasjonsform": {
+      "kode": "DA",
+      "beskrivelse": "Ansvarlig selskap med delt ansvar",
+      "links": []
+    },
+    "hjemmeside": "www.fastfoodtaxi.no",
+    "registreringsdatoEnhetsregisteret": "2013-04-17",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Cateringvirksomhet",
+      "kode": "56.210"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "7014",
+      "poststed": "TRONDHEIM",
+      "adresse": [ "c/o Pizza123", "Nonnegata 6" ],
+      "kommune": "TRONDHEIM",
+      "kommunenummer": "5001"
+    },
+    "stiftelsesdato": "2013-04-01",
+    "institusjonellSektorkode": {
+      "kode": "2300",
+      "beskrivelse": "Personlige foretak"
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811816132",
+    "navn": "KURT LERBO TRANSPORT",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-15",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Drosjebiltransport",
+      "kode": "49.320"
+    },
+    "antallAnsatte": 4,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "4823",
+      "poststed": "NEDENES",
+      "adresse": [ "Blåklokkesvingen 107" ],
+      "kommune": "ARENDAL",
+      "kommunenummer": "0906"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": true,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811816612",
+    "navn": "KIRKEBØEN VANNVERK",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-15",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Uttak fra kilde, rensing og distribusjon av vann",
+      "kode": "36.000"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "3560",
+      "poststed": "HEMSEDAL",
+      "adresse": [ "Att: Ingunn Haugstad", "Kirkebøen" ],
+      "kommune": "HEMSEDAL",
+      "kommunenummer": "0618"
+    },
+    "stiftelsesdato": "2013-03-20",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811828572",
+    "navn": "JOHANNE FOSSHEIM",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-16",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Utøvende kunstnere og underholdningsvirksomhet innen scenekunst",
+      "kode": "90.012"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0656",
+      "poststed": "OSLO",
+      "adresse": [ "Schweigaards gate 91B" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811831212",
+    "navn": "RENHOLDS ROGULSKA",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-17",
+    "registrertIMvaregisteret": true,
+    "naeringskode1": {
+      "beskrivelse": "Rengjøring av bygninger",
+      "kode": "81.210"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "1363",
+      "poststed": "HØVIK",
+      "adresse": [ "Kirkeveien 54A" ],
+      "kommune": "BÆRUM",
+      "kommunenummer": "0219"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811832812",
+    "navn": "NØRRESUNDBY VVS",
+    "organisasjonsform": {
+      "kode": "NUF",
+      "beskrivelse": "Norskregistrert utenlandsk foretak",
+      "links": []
+    },
+    "postadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0369",
+      "poststed": "OSLO",
+      "adresse": [ "c/o KPMG Tax AS", "Postboks 7000 Majorstuen" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "registreringsdatoEnhetsregisteret": "2013-05-08",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Rørleggerarbeid",
+      "kode": "43.221"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Danmark",
+      "landkode": "DK",
+      "poststed": "9400 Nørresundby",
+      "adresse": [ "Hjørringvej 184" ]
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811834882",
+    "navn": "BODIL JENSSEN HOUG",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-10-30",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Andre tjenester tilknyttet undervisning",
+      "kode": "85.609"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "1353",
+      "poststed": "BÆRUMS VERK",
+      "adresse": [ "Nedre Toppenhaug 50" ],
+      "kommune": "BÆRUM",
+      "kommunenummer": "0219"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811835242",
+    "navn": "PARROT PRODUCTIONS IRENE BAKKEN KALANTZAKOU",
+    "organisasjonsform": {
+      "kode": "ENK",
+      "beskrivelse": "Enkeltpersonforetak",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-17",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Produksjon av film, video og fjernsynsprogrammer",
+      "kode": "59.110"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "0464",
+      "poststed": "OSLO",
+      "adresse": [ "Grimstadgata 23D" ],
+      "kommune": "OSLO",
+      "kommunenummer": "0301"
+    },
+    "institusjonellSektorkode": {
+      "kode": "8200",
+      "beskrivelse": "Personlig næringsdrivende"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811837032",
+    "navn": "AUKLANDSHAMN BEDEHUS",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-04-25",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Religiøse organisasjoner",
+      "kode": "94.910"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "5551",
+      "poststed": "AUKLANDSHAMN",
+      "adresse": [ "Øklandsvegen 790" ],
+      "kommune": "SVEIO",
+      "kommunenummer": "1216"
+    },
+    "stiftelsesdato": "1910-01-30",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Nynorsk",
+    "links": []
+  },
+  {
+    "organisasjonsnummer": "811838292",
+    "navn": "HAUGALAND HAZARA KULTUR FORENING",
+    "organisasjonsform": {
+      "kode": "FLI",
+      "beskrivelse": "Forening/lag/innretning",
+      "links": []
+    },
+    "registreringsdatoEnhetsregisteret": "2013-05-11",
+    "registrertIMvaregisteret": false,
+    "naeringskode1": {
+      "beskrivelse": "Aktiviteter i andre interesseorganisasjoner ikke nevnt annet sted",
+      "kode": "94.991"
+    },
+    "antallAnsatte": 0,
+    "forretningsadresse": {
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "5515",
+      "poststed": "HAUGESUND",
+      "adresse": [ "Strindavegen 10" ],
+      "kommune": "HAUGESUND",
+      "kommunenummer": "1106"
+    },
+    "stiftelsesdato": "2013-04-06",
+    "institusjonellSektorkode": {
+      "kode": "7000",
+      "beskrivelse": "Ideelle organisasjoner"
+    },
+    "registrertIForetaksregisteret": false,
+    "registrertIStiftelsesregisteret": false,
+    "registrertIFrivillighetsregisteret": false,
+    "konkurs": false,
+    "underAvvikling": false,
+    "underTvangsavviklingEllerTvangsopplosning": false,
+    "maalform": "Bokmål",
+    "links": []
+  }
+]

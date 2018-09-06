@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        table, td {
+            border-collapse: collapse;
+            border: solid 1px gray;
+            padding: 2px;
+        }
+
+        tr:nth-child(even) {
+            background: #CCC
+        }
+
+        tr:nth-child(odd) {
+            background: #FFF
+        }
+
+        th {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainContent">
+        <table>
+            <tr>
+                <th v-for="field in fields">{{field}}</th>
+                <th></th>
+            </tr>
+            <tr v-for="(unit, index) in units">
+                <td v-for="field in fields">
+                    <template v-if="unit.isEditing">
+                        <input type="text" v-model="unit[field]"/>
+                    </template>
+                    <template v-else>
+                        {{unit[field]}}
+                    </template>
+                </td>
+                <td v-if="unit.isEditing">
+                    <button v-on:click="changeEdit(index, false, true)">cancel</button>
+                    <button v-on:click="changeEdit(index, false)">save</button>
+                </td>
+                <td v-else>
+                    <button v-on:click="changeEdit(index)">edit</button>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <script src="enheter.json"></script>
+    <script>
+        var app = new Vue({
+            el: '#mainContent',
+            data: {
+                units: function() {
+                    units.forEach(u => u.isEditing = false);
+                    return units;
+                }(),
+                fields: ['organisasjonsnummer', 'antallAnsatte', 'navn']
+            },
+            methods: {
+                changeEdit: function (index, isEditing = true, revert = false) {
+                    if (isEditing) {
+                        this.units[index].oldValue = JSON.parse(JSON.stringify(this.units[index]));
+                    } else if (revert) {
+                        this.fields.forEach(f => this.units[index][f] = this.units[index].oldValue[f]);
+                    }
+                    this.units[index].isEditing = isEditing;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

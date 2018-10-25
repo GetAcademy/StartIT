@@ -1,0 +1,19 @@
+﻿body {
+}
+
+table.mainList {
+    border-collapse: collapse;
+}
+
+    table.mainList, table.mainList > th, table.mainList > td {
+        border: 1px solid gray;
+    }
+
+        table.mainList > td, table.mainList > th {
+            padding: 4px;
+        }
+
+tr.header {
+    background-color: blue;
+    color: white;
+}

@@ -41,11 +41,10 @@
         boardModel[24].piece = { type: 'queen', isWhite: true };
         boardModel[1].piece = { type: 'king', isWhite: false };
         show();
-        console.log(boardModel.filter(square=>square.piece));
+        console.log(boardModel.filter(square => square.piece));
 
 
-        function createBoard()
-        {
+        function createBoard() {
             return createArray(8)
                 .map(createRow)
                 .reduce((board, row) => board.concat(row), []);
@@ -55,7 +54,7 @@
             var isFirstSquareWhite = i % 2 == 0;
             var x = isFirstSquareWhite ? 1 : 0;
             return createArray(8)
-                .map(function (i) { return { isBlack: i % 2 === x }; });
+                .map(i => ({ isBlack: i % 2 === x }));
         }
 
         function createArray(n) {
@@ -66,7 +65,7 @@
         function show() {
             boardDiv.innerHTML = boardModel
                 .map(htmlFromSquareModel)
-                .reduce((allHtml, squareHtml) => allHtml + squareHtml,'');
+                .reduce((allHtml, squareHtml) => allHtml + squareHtml, '');
         }
 
         function htmlFromSquareModel(squareModel) {

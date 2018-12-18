@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .timer {
+            font-family: helvetica;
+            background-color: bisque;
+            border: 1px solid darksalmon;
+            border-radius: 10px;
+            width: 200px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .finished {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="timers"></div>
+    <script>
+        // Model:
+        var timers = [
+            {
+                countdownTimeSecs: 5,
+                text: 'Ta pause!',
+                isRunning: false,
+                status: 'Ikke startet'
+            },
+            {
+                countdownTimeSecs: 15,
+                text: 'Aaa',
+                isRunning: false,
+                status: 'Ikke startet'
+            },
+            {
+                countdownTimeSecs: 25,
+                text: 'Bbb',
+                isRunning: false,
+                status: 'Ikke startet'
+            },
+        ];
+
+        // View:
+        showTimers();
+        function showTimers() {
+            let html = '';
+            for (let i = 0; i < timers.length; i++) {
+                const timer = timers[i];
+                html += htmlFromTimer(timer, i);
+            }
+            document.getElementById('timers').innerHTML = html;
+        }
+
+        function htmlFromTimer(timer, i) {
+            return `<div class="timer ${timer.isFinished ? 'finished' : ''}">
+                        <h3>${ timer.isRunning ? timer.remainingTime : '<i>' + timer.status + '</i>'}</h3>
+                        Nedtelling ${timer.countdownTimeSecs} sekunder<br/>
+                        ${timer.text}<br/>
+                        <button ${timer.isRunning ? 'disabled' : ''} onclick="startTimer(${i})">Start</button>
+                        <button ${!timer.isRunning ? 'disabled' : ''} onclick="pauseTimer(${i})">Pause</button>
+                        <button onclick="deleteTimer(${i})">Slett</button>
+                    </div>
+                    `;
+        }
+
+        // Controller:
+        setInterval(tick, 1000);
+        function tick() {
+            for (let timer of timers) {
+                if (timer.isRunning) {
+                    timer.remainingTime =
+                        timer.countdownTimeSecs -
+                        Math.floor(getTimeNowAsSeconds() - timer.startTime);
+                    if (timer.remainingTime <= 0) {
+                        timer.remainingTime = 0;
+                        timer.isRunning = false;
+                        timer.isFinished = true;
+                        timer.status = 'Fullført';
+                    }
+                }
+            }
+            showTimers();
+        }
+
+        function startTimer(index) {
+            const timer = timers[index];
+            timer.isRunning = true;
+            timer.startTime = getTimeNowAsSeconds();
+            timer.status = '';
+            timer.isFinished = false;
+            timer.remainingTime = timer.countdownTimeSecs;
+            tick();
+        }
+
+        function pauseTimer(index) {
+            const timer = timers[index];
+            timer.isRunning = false;
+            timer.status = timer.remainingTime + ' - pauset';
+            showTimers();
+        }
+
+        function deleteTimer(index) {
+            timers.splice(index, 1);
+            showTimers();
+        }
+
+        function getTimeNowAsSeconds() {
+            return new Date().getTime() / 1000;
+        }
+
+    </script>
+</body>
+</html>

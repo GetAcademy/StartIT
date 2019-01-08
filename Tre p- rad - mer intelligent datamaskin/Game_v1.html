@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Tre på rad</title>
+    <style type="text/css">
+        div.cell {
+            color: green;
+            background-color: lightgray;
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 2px;
+            font-size: 500%;
+            font-family: helvetica;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        div.first {
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="board"></div>
+
+    <script type="text/javascript">
+        // model
+        var boardModel = [null, null, null, null, null, null, null, null, null];
+        showBoard();
+
+        function showBoard() {
+            var boardHtml = '';
+            for (let index = 0; index < 9; index++) {
+                const cssClass = index % 3 === 0 ? 'first' : '';
+                const cellContent = boardModel[index] || '';
+                boardHtml += `<div onclick="setX(${index})" class="cell ${cssClass}">${cellContent}</div>`
+            }
+            document.getElementById('board').innerHTML = boardHtml;
+        }
+
+        function setX(index) {
+            if (boardModel[index] !== null) return;
+            boardModel[index] = 'x';
+            if (checkIsWinning(boardModel)) {
+                showBoard();
+                return;
+            }
+
+            let playIndex = getWinningPlayIndex() || getRandomPlayIndex();
+            if (playIndex !== null) {
+                boardModel[playIndex] = 'o';
+                if (checkIsWinning(boardModel)) {
+                    showBoard();
+                    return;
+                }
+            } else {
+                alert('Ingen ledig posisjon');
+            }
+            showBoard();
+        }
+
+        function getWinningPlayIndex() {
+            let possiblePlayIndexes = getPossiblePlayIndexes();
+            for (playIndex of possiblePlayIndexes) {
+                let boardModelCopy = copyObject(boardModel);
+                boardModelCopy[playIndex] = 'o';
+                if (checkIsWinning(boardModelCopy)) return playIndex;
+            }
+            return null;
+        }
+
+        function checkIsWinning(someBoardModel) {
+            return checkIsWinningSingleCombination(someBoardModel, 0, 1, 2)
+                || checkIsWinningSingleCombination(someBoardModel, 3, 4, 5)
+                || checkIsWinningSingleCombination(someBoardModel, 6, 7, 8)
+                || checkIsWinningSingleCombination(someBoardModel, 0, 3, 6)
+                || checkIsWinningSingleCombination(someBoardModel, 1, 4, 7)
+                || checkIsWinningSingleCombination(someBoardModel, 2, 5, 8)
+                || checkIsWinningSingleCombination(someBoardModel, 0, 4, 8)
+                || checkIsWinningSingleCombination(someBoardModel, 2, 4, 6);
+        }
+
+        function checkIsWinningSingleCombination(bm, index1, index2, index3) {
+            return bm[index1] != null
+                && bm[index1] === bm[index2]
+                && bm[index1] === bm[index3];
+        }
+
+        function copyObject(obj) {
+            return JSON.parse(JSON.stringify(obj));
+        }
+
+        function getRandomPlayIndex() {
+            //             0    1   2      3    4   5
+            // eksempel: ['x', 'x', null, 'x', 'o', null, 'o', 'o', 'x']
+            let indexes = getPossiblePlayIndexes();
+            // skal i eksemplet gi: [2, 5]
+            if (indexes.length > 0) {
+                let randomIndex = Math.floor(Math.random() * indexes.length);
+                return indexes[randomIndex];
+            }
+            return null;
+        }
+
+        function getPossiblePlayIndexes() {
+            let indexes = [];
+            for (let i = 0; i < boardModel.length; i++) {
+                if (boardModel[i] === null) {
+                    indexes.push(i);
+                }
+            }
+            return indexes;
+        }
+    </script>
+</body>
+</html>

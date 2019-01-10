@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #messages {
+            width: 400px;
+            height: 400px;
+            background-color: lightblue;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <select id="chatRooms" onchange="selectChatRoom(this.value)"></select>
+    <h3 id="header"></h3>
+    <span id="created"></span><br />
+    <div id="messages"></div>
+    Navn: <input type="text" id="name" /><br />
+    Melding: <input type="txt" id="message" /><br />
+    <button onclick="sendMessage()">Send</button>
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+    <script>
+        var chatRoomsModel;
+        var chatRoomDoc;
+
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyA7ELrMG8aZVhSrXYGMXIHugWahBCMEhuE",
+            authDomain: "startit-e8fa9.firebaseapp.com",
+            databaseURL: "https://startit-e8fa9.firebaseio.com",
+            projectId: "startit-e8fa9",
+            storageBucket: "startit-e8fa9.appspot.com",
+            messagingSenderId: "43155326043"
+        };
+        firebase.initializeApp(config);
+        var db = firebase.firestore();
+        const settings = {/* your settings... */ timestampsInSnapshots: true };
+        db.settings(settings);
+
+        db.collection('chatRooms').get()
+            .then(handleChatRooms)
+            .catch(handleError);
+
+        function handleChatRooms(chatRoomsSnapshot) {
+            chatRoomsModel = [];
+            chatRoomsSnapshot.forEach(handleSingleChatRoom);
+            showChatRoomsSelect();
+        }
+
+        function showChatRoomsSelect() {
+            let html = '';
+            for (let chatRoom of chatRoomsModel) {
+                html += `<option value="${chatRoom.id}">${chatRoom.name}</option>`;
+            }
+            document.getElementById('chatRooms').innerHTML = html;
+            selectChatRoom(chatRoomsModel[0].id);
+        }
+
+        function handleSingleChatRoom(chatRoomSnapshot) {
+            const id = chatRoomSnapshot.id;
+            const chatRoomObj = chatRoomSnapshot.data();
+            chatRoomObj.id = id;
+            chatRoomsModel.push(chatRoomObj);
+        }
+
+        function handleError(error) {
+            alert('Firebase-operasjonen feilet. Sjekk logg for detaljer. ');
+            throw error;
+        }
+
+        function selectChatRoom(chatRoomId) {
+            if (chatRoomDoc) {
+                chatRoomDoc
+                    .collection('messages')
+                    .orderBy('created')
+                    .onSnapshot(function () { });
+            }
+            chatRoomDoc = db.collection('chatRooms').doc(chatRoomId);
+            chatRoomDoc.get()
+                .then(showChatRoomNameAndCreated)
+                .catch(handleError);
+            chatRoomDoc
+                .collection('messages')
+                .orderBy('created')
+                .onSnapshot(showChatRoomMessages);
+        }
+
+        function showChatRoomNameAndCreated(chatRoomSnapshot) {
+            const chatRoomDoc = chatRoomSnapshot.data();
+            document.getElementById('header').innerHTML = chatRoomDoc.name;
+            document.getElementById('created').innerHTML = chatRoomDoc.created.toDate().toLocaleString('nb-no');
+        }
+
+        function showChatRoomMessages(messagesSnapshot) {
+            let html = '';
+            messagesSnapshot.forEach(function (messageSnapshot) {
+                const message = messageSnapshot.data();
+                html += `<p><small>${message.created.toDate().toLocaleString('nb-no')}</small><br/>
+                                 ${message.name}> ${message.text}</p>`;
+            });
+            document.getElementById('messages').innerHTML = html;
+        }
+
+        function sendMessage() {
+            if (!chatRoomDoc) return;
+            const name = document.getElementById('name').value;
+            const text = document.getElementById('message').value;
+            const created = firebase.firestore.Timestamp.fromDate(new Date());
+            chatRoomDoc.collection('messages').add({ name, text, created});
+        }
+
+    </script>
+</body>
+</html>

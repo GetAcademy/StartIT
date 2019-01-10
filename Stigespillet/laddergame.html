@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        table, tr, td {
+            border: 1px solid goldenrod;
+            border-collapse: collapse;
+        }
+
+        td {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+<button onclick="throwDice(); movePiece(); ">Kast terningen</button>
+<div id="dice"></div>
+<table id="board"></table>
+<script>
+    // Model
+    var model = {
+        piece: { position: 1, color: 'blue' },
+        shortcuts: {
+            // jump ahead
+            from1: 39,
+            from6: 23,
+            from26: 30,
+            from42: 83,
+            from48: 62,
+            from50: 69,
+            from64: 82,
+            from79: 85,
+            // fall back
+            from11: 7,
+            from16: 2,
+            from47: 27,
+            from52: 37,
+            from72: 36,
+            from74: 12,
+            from76: 60,
+            from87: 75
+        },
+        diceValue: 6
+    };
+    showBoard();
+
+    // View
+    function showBoard() {
+        let tableHtml = '';
+        for (let rowIndex = 0; rowIndex < 10; rowIndex++) {
+            tableHtml += '<tr>';
+            const isOdd = rowIndex % 2 === 1;
+            for (let colIndex = 0; colIndex < 9; colIndex++) {
+                const position = isOdd
+                    ? 90 - (rowIndex * 9 + (8 - colIndex))
+                    : 90 - (rowIndex * 9 + colIndex);
+                const piece = model.piece.position === position ? 'X' : '&nbsp;';
+                tableHtml += `<td>${position}<br/><center>${piece}</center</td>`;
+            }
+            tableHtml += '</tr>';
+        }
+        document.getElementById('board').innerHTML = tableHtml;
+    }
+
+    // Controller
+    function movePiece() {
+        console.log('m');
+        let newPosition = model.piece.position + model.diceValue;
+        const shortcutKeyName = 'from' + newPosition;
+        const shortcutDestination = model.shortcuts[shortcutKeyName];
+        if (shortcutDestination !== undefined) {
+            setTimeout(function () {
+                newPosition = shortcutDestination;
+                model.piece.position = newPosition;
+                showBoard();
+            }, 1000);            
+        }
+        model.piece.position = newPosition;
+        if (newPosition === 90) {
+            alert('Du har vunnet!');
+        }
+        showBoard();
+    }    
+
+    function throwDice() {
+        model.diceValue = Math.ceil(Math.random() * 6);
+        document.getElementById('dice').innerHTML = 'Terning: ' + model.diceValue;
+    }
+</script>
+</body>
+</html>

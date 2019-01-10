@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .timer {
+            font-family: helvetica;
+            background-color: bisque;
+            border: 1px solid darksalmon;
+            border-radius: 10px;
+            width: 200px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .finished {
+            background-color: green;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="timers">
+        <div v-for="timer in timers" class="timer" v-bind:class="timer.isFinished ? 'finished' : ''">
+            <h3 v-if="timer.isRunning">{{ timer.remainingTime }}</h3>
+            <h3 v-else><i>{{ timer.status }}</i></h3>
+            Nedtelling {{timer.countdownTimeSecs}} sekunder<br />
+            {{timer.text}}<br />
+            <button v-bind:disabled="timer.isRunning" v-on:click="startTimer(timer)">Start</button>
+            <button v-bind:disabled="!timer.isRunning" v-on:click="pauseTimer(timer)">Pause</button>
+            <button onclick="deleteTimer(timer)">Slett</button>
+        </div>
+    </div>
+    <script>
+        var app = new Vue({
+            el: '#timers',
+            data: {
+                timers: [
+                    {
+                        countdownTimeSecs: 5,
+                        text: 'Ta pause!',
+                        isRunning: false,
+                        status: 'Ikke startet',
+                        isFinished: false,
+                        remainingTime: 0
+                    },
+                    {
+                        countdownTimeSecs: 15,
+                        text: 'Aaa',
+                        isRunning: false,
+                        status: 'Ikke startet',
+                        isFinished: false,
+                        remainingTime: 0
+                    },
+                    {
+                        countdownTimeSecs: 25,
+                        text: 'Bbb',
+                        isRunning: false,
+                        status: 'Ikke startet',
+                        isFinished: false,
+                        remainingTime: 0
+                    },
+                ]
+            },
+            created: function () {
+                setInterval(() => this.tick(), 300);
+            },
+            methods: {
+                tick: function () {
+                    for (let timer of this.timers) {
+                        if (timer.isRunning) {
+                            timer.remainingTime =
+                                timer.countdownTimeSecs -
+                                Math.floor(this.getTimeNowAsSeconds() - timer.startTime);
+                            if (timer.remainingTime <= 0) {
+                                timer.remainingTime = 0;
+                                timer.isRunning = false;
+                                timer.isFinished = true;
+                                timer.status = 'Fullført';
+                            }
+                        }
+                    }
+                },
+                startTimer: function (timer) {
+                    timer.isRunning = true;
+                    timer.startTime = this.getTimeNowAsSeconds();
+                    timer.status = '';
+                    timer.isFinished = false;
+                    timer.remainingTime = timer.countdownTimeSecs;
+                    this.tick();
+                },
+                pauseTimer: function (timer) {
+                    timer.isRunning = false;
+                    timer.status = timer.remainingTime + ' - pauset';
+                },
+                deleteTimer: function (timer) {
+                    for (let index = 0; index < this.timers.length; index++) {
+                        if (this.timers[index] === timer) {
+                            this.timers.splice(index, 1);
+                            return;
+                        }
+                    }
+                },
+                getTimeNowAsSeconds: function () {
+                    return new Date().getTime() / 1000;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

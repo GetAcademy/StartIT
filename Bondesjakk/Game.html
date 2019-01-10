@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        table, tr, td {
+            border: 2px solid white;
+            border-collapse: collapse;
+        }
+
+        td {
+            width: 50px;
+            height: 40px;
+            font-size: 200%;
+            text-align: center;
+            background-color: #7777aa;
+        }
+
+            td.x {
+                color: darkblue;
+            }
+
+            td.o {
+                color: greenyellow;
+            }
+    </style>
+</head>
+<body>
+    <button onclick="createGame()">Create new game</button><span id="createdGame"></span><br />
+    <input type="text" id="joinGame" /><button onclick="joinGame()">Join game</button><br />
+
+    <table id="board"></table>
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+    <script>
+        // model
+        var currentBoard;
+        var currentBoardId;
+        var mySymbol;
+        const blankBoardPattern = '               ,               ,               ,               ,               ,               ,               ,               ,               ,               ,               ,               ,               ,               ,               ';
+
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDj1XX5e2i-7bM4pzfYpMHhIhXtoZZivKs",
+            authDomain: "noughts-and-crosses-8ec57.firebaseapp.com",
+            databaseURL: "https://noughts-and-crosses-8ec57.firebaseio.com",
+            projectId: "noughts-and-crosses-8ec57",
+            storageBucket: "",
+            messagingSenderId: "1075994718226"
+        };
+        firebase.initializeApp(config);
+        var db = firebase.firestore();
+        // Disable deprecated features
+        db.settings({
+            timestampsInSnapshots: true
+        });
+
+        function showBoard() {
+            let tableHtml = '';
+            console.log(currentBoard);
+            let lines = currentBoard.boardContent.split(',');
+            for (let lineIndex = 0; lineIndex < lines.length; lineIndex++) {
+                const line = lines[lineIndex];
+                tableHtml += '<tr>';
+                for (let letterIndex = 0; letterIndex < line.length; letterIndex++) {
+                    const letter = line[letterIndex];
+                    tableHtml += `<td onclick="setMark(${lineIndex},${letterIndex})" class="${letter}">${letter}</td>`;
+                }
+                tableHtml += '</tr>';
+            }
+
+            document.getElementById('board').innerHTML = tableHtml;
+            console.log(currentBoard);
+        }
+
+        function setMark(lineIndex, letterIndex) {
+            let lines = currentBoard.boardContent.split(',');
+            let line = lines[lineIndex];
+            let letters = line.split('');
+            letters[letterIndex] = mySymbol;
+            lines[lineIndex] = letters.join('');
+            currentBoard.boardContent = lines.join(',');
+            db.collection("boards").doc(currentBoardId).set(currentBoard);
+        }
+
+        function createGame() {
+            db.collection("boards").add({ boardContent: blankBoardPattern })
+                .then(function (docRef) {
+                    currentBoardId = docRef.id;
+                    document.getElementById('createdGame').innerHTML = ' Game id: ' + currentBoardId;
+                    console.log("Document written with ID: ", docRef.id);
+                    mySymbol = 'x';
+                    listenToSnapshots();
+                })
+                .catch(function (error) {
+                    console.error("Error adding document: ", error);
+                });
+        }
+
+        function joinGame() {
+            currentBoardId = document.getElementById('joinGame').value;
+            mySymbol = 'o';
+            listenToSnapshots();
+        }
+
+        function listenToSnapshots() {
+            db.collection('boards').doc(currentBoardId).onSnapshot(
+                function (boardSnapshot) {
+                    const boardObj = boardSnapshot.data();
+                    currentBoard = boardObj;
+                    showBoard();
+                });
+        }
+    </script>
+</body>
+</html>

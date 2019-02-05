@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+    <button onclick="tick()">Tick</button><br />
+    <canvas id="myCanvas" width="600" height="600" style="border:1px solid #d3d3d3;"></canvas>
+
+    <script>
+        "use strict";
+        const vectorFromDirection = {
+            north: { x: 0, y: -1 },
+            south: { x: 0, y: 1 },
+            west: { x: -1, y: 0 },
+            east: { x: 1, y: 0 },
+        };
+        var arena = [
+            { name: 'Per', direction: 'north' },
+            { name: 'Pål', direction: 'east' },
+            { name: 'Espen', direction: 'south', action: dummyAction },
+        ];
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "24px Arial";
+
+        const arenaSideSize = 5;
+        const pixelsPerSquare = c.width / arenaSideSize;
+        const pixelsRadius = pixelsPerSquare / 2;
+        drawArena();
+
+        function tick() {
+            doRobotActions();
+            drawArena();
+        }
+
+        function doRobotActions() {
+            for (let i = 0; i < arena.length; i++) {
+                const robot = arena[i];
+                if (!robot || !robot.action || robot.actionDone) continue;
+                const actionResult = robot.action();
+                if (actionResult.walk) {
+                    robot.actionDone = true;
+                    const rc = rowAndColIndexFromIndex(i);
+                    if (robot.direction === 'north') rc.row--;
+                    if (robot.direction === 'south') rc.row++;
+                    if (robot.direction === 'east') rc.col++;
+                    if (robot.direction === 'west') rc.col--;
+                    const newIndex = rc.row * arenaSideSize + rc.col;
+                    arena[newIndex] = robot;
+                    arena[i] = null;
+                }
+            }
+            for (let robot of arena) {
+                if (!robot) continue;
+                robot.actionDone = false;
+            }
+        }
+
+        function drawArena() {
+            ctx.clearRect(0, 0, c.width, c.height);
+            for (let i = 0; i < arena.length; i++) {
+                const robot = arena[i];
+                if (!robot) continue;
+                const rc = rowAndColIndexFromIndex(i);
+                const x = rc.col * pixelsPerSquare;
+                const y = rc.row * pixelsPerSquare;
+                drawRobot(x, y, robot);
+            }
+        }
+
+        function rowAndColIndexFromIndex(i) {
+            const rowIndex = Math.floor(i / arenaSideSize);
+            const colIndex = i % arenaSideSize;
+            return { col: colIndex, row: rowIndex };
+        }
+
+        function drawRobot(x, y, robot) {
+            ctx.beginPath();
+            const cX = x + pixelsRadius;
+            const cY = y + pixelsRadius;
+            ctx.arc(cX, cY, 0.8 * pixelsRadius, 0, 2 * Math.PI);
+            ctx.moveTo(cX, cY);
+            const swordEndPosition = getSwordEndPosition(cX, cY, robot);
+            ctx.lineTo(swordEndPosition.x, swordEndPosition.y);
+            ctx.fillText(robot.name, cX - pixelsRadius * 0.7, cY);
+            ctx.stroke();
+        }
+
+        function getSwordEndPosition(x, y, robot) {
+            const delta = vectorFromDirection[robot.direction];
+            return {
+                x: x + delta.x * pixelsRadius,
+                y: y + delta.y * pixelsRadius,
+            }
+        }
+
+        function dummyAction() {
+            return { walk: true };
+        }
+    </script>
+
+</body>
+</html>

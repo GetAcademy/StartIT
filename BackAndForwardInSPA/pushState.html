@@ -7,6 +7,12 @@
 </head>
 <body>
     <input id="url" type="text"/>
-    <button onclick="history.pushState(null, null, document.getElementById('url').value)">pushState</button>
+    <button onclick="go()">pushState</button>
+    <script>
+        function go() {
+            const page = document.getElementById('url').value;
+            history.pushState(null, null, page);
+        }
+    </script>
 </body>
 </html>

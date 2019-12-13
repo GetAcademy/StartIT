@@ -6,44 +6,64 @@
     <title></title>
 </head>
 <body>
-    <button onclick="go(-1)">Back</button>
-    <button onclick="showA()">A</button>
-    <button onclick="showB()">B</button>
-    <button onclick="showC()">C</button>
-    <button onclick="showD()">D</button>
+    id: <input id="id" type="text" /><br />
+    <button onclick="showA(parseInt(document.getElementById('id').value))">A</button>
+    <button onclick="showB(parseInt(document.getElementById('id').value))">B</button>
+    <button onclick="showC(parseInt(document.getElementById('id').value))">C</button>
+    <button onclick="showD(parseInt(document.getElementById('id').value))">D</button>
 
     <div id="content"></div>
 
     <script>
         let myDiv = document.getElementById('content');
-        let model = {
-            history: []
+
+        const pageToFunctionMap = {
+            a: showA,
+            b: showB,
+            c: showC,
+            d: showD
         };
-        function showA() {
-            myDiv.innerHTML = 'Side A';
-            addPageToHistory('showA()');
+
+        window.onpopstate = function (event) {
+            const value = location.hash.substr(1); // eks: c/105
+            const parts = value.split('/');
+            const page = parts[0];
+            const id = parseInt(parts[1]);
+            console.log(event, page, id);
+
+            let func = pageToFunctionMap[page];
+            if (func) {
+                func(id);
+            } else {
+                showStartPage();
+            }
+            //if (page == 'a') showA(id);
+            //else if (page == 'b') showB(id);
+            //else if (page == 'c') showC(id);
+            //else if (page == 'd') showD(id);
+
         }
-        function showB() {
-            myDiv.innerHTML = 'Side B';
-            addPageToHistory('showB()');
+
+        function showA(id) {
+            myDiv.innerHTML = 'Side A ' + id;
+            addPageToHistory('a', id);
         }
-        function showC() {
-            myDiv.innerHTML = 'Side C';
-            addPageToHistory('showC()');
+        function showB(id) {
+            myDiv.innerHTML = 'Side B ' + id;
+            addPageToHistory('b', id);
         }
-        function showD() {
-            myDiv.innerHTML = 'Side D';
-            addPageToHistory('showD()');
+        function showC(id) {
+            myDiv.innerHTML = 'Side C ' + id;
+            addPageToHistory('c', id);
         }
-        function addPageToHistory(pageJS) {
-            model.history.push(pageJS);
+        function showD(id) {
+            myDiv.innerHTML = 'Side D ' + id;
+            addPageToHistory('d', id);
+        }
+        function addPageToHistory(page, id) {
+            history.pushState(null, null, `#${page}/${id}`)
         }
         function go(delta) {
-            if (delta == -1 && model.history.length > 0) {
-                model.history.pop();
-                let destinationPageJs = model.history.pop();
-                eval(destinationPageJs);
-            }
         }
     </script>
 </body>

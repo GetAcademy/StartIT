@@ -31,9 +31,9 @@
             myDiv.innerHTML = 'Side C';
             addPageToHistory('showC()');
         }
-        function showD() {
+        function showD(id) {
             myDiv.innerHTML = 'Side D';
-            addPageToHistory('showD()');
+            addPageToHistory(`showD(${id})`);
         }
         function addPageToHistory(pageJS) {
             model.history.push(pageJS);

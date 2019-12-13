@@ -29,11 +29,11 @@
             const parts = value.split('/');
             const page = parts[0];
             const id = parseInt(parts[1]);
-            console.log(event, page, id);
+            console.log(event.state, page, id);
 
             let func = pageToFunctionMap[page];
             if (func) {
-                func(id);
+                func(id, false);
             } else {
                 showStartPage();
             }
@@ -44,24 +44,24 @@
 
         }
 
-        function showA(id) {
+        function showA(id, addToHistory = true) {
             myDiv.innerHTML = 'Side A ' + id;
-            addPageToHistory('a', id);
+            if(addToHistory) addPageToHistory('a', id);
         }
-        function showB(id) {
+        function showB(id, addToHistory = true) {
             myDiv.innerHTML = 'Side B ' + id;
-            addPageToHistory('b', id);
+            if(addToHistory) addPageToHistory('b', id);
         }
-        function showC(id) {
+        function showC(id, addToHistory = true) {
             myDiv.innerHTML = 'Side C ' + id;
-            addPageToHistory('c', id);
+            if(addToHistory) addPageToHistory('c', id);
         }
-        function showD(id) {
+        function showD(id, addToHistory = true) {
             myDiv.innerHTML = 'Side D ' + id;
-            addPageToHistory('d', id);
+            if(addToHistory) addPageToHistory('d', id);
         }
         function addPageToHistory(page, id) {
-            history.pushState(null, null, `#${page}/${id}`)
+            history.pushState({ page, id }, null, `#${page}/${id}`)
         }
         function go(delta) {
         }

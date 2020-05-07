@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script>
+        let things = [
+            { id: 1, name: 'Yoga', color: 'green' },
+            { id: 2, name: 'Event', color: 'red' },
+            { id: 3, name: 'Session', color: 'blue' },
+            { id: 6, name: 'EnkeltYoga', category: 1, color: 'gray' },
+            { id: 4, name: 'Fullmåneyoga', category: 6 },
+            { id: 5, name: 'Supersession', category: 3 },
+        ];
+
+        function show(id) {
+            const thing = findThing(id);
+            const color = getColor(thing);
+            document.getElementById('app').innerHTML = `
+                <div style="color: ${color}">
+                    ${thing.name}
+                </div>            
+            `;
+        }
+
+        function getColor(thing) {
+            if (thing.color) return thing.color;
+            const parentThing = findThing(thing.category);
+            return getColor(parentThing);            
+        }
+
+        function findThing(id) {
+            return things.filter(t => t.id === id)[0];
+        }
+
+
+    </script>
+</body>
+
+</html>

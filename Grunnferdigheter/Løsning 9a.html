@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+<body>
+    <p>Ferdighet 9a - Valgsetninger Sammenligne to tall: ==, !=, &lt;, &lt;=, >, >=</p>
+
+    <div id="app"></div>
+    <script>
+        // model
+        var tallA = '2';
+        var tallB = '2';
+        var lastChanged = 'a';
+
+        // view
+        updateView();
+        function updateView() {
+            document.getElementById('app').innerHTML = `
+                <input type="range" min="1" max="100" step="1" 
+                       onchange="setA(this.value)" 
+                       value="${tallA}" 
+                />
+                <input type="range" min="1" max="100" step="1" 
+                       onchange="setB(this.value)" 
+                       value="${tallB}" 
+                />
+                <h3>Du har valgt ${tallA} og ${tallB}</h3>
+                ${compare(tallA == tallB, '==', 'Tallene er like')}<br/>
+                ${compare(tallA != tallB, '!=', 'Tallene er ulike')}<br/>
+                ${compare(tallA >= tallB, '>=', tallA + ' er større enn eller lik ' + tallB)}<br/>
+                ${compare(tallA > tallB, '>', tallA + ' er større enn eller lik ' + tallB)}<br/>
+                ${compare(tallA <= tallB, '<=', tallA + ' er større enn eller lik ' + tallB)}<br/>
+                ${compare(tallA < tallB, '<', tallA + ' er større enn eller lik ' + tallB)}<br/>
+            `;
+            const inputIndex = lastChanged == 'a' ? 0 : 1;
+            const inputTagLastChanged = document.getElementsByTagName('input')[inputIndex];
+            inputTagLastChanged.focus();
+        }
+
+        function compare(comparison, operator, textIfTrue) {
+            return operator + ' ' + wrap(comparison, textIfTrue);
+        }
+
+        function wrap(doWrap, text) {
+            return doWrap ? text : `<del>${text}</del>`;
+        }
+
+        // controller
+        function setA(value) {
+            tallA = parseInt(value);
+            lastChanged = 'a';
+            updateView();
+        }
+
+        function setB(value) {
+            tallB = parseInt(value);
+            lastChanged = 'b';
+            updateView();
+        }
+    </script>
+</body>
+
+</html>

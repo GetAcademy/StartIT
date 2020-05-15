@@ -1,9 +1,5 @@
-function selectAction(index) {
-    const actions = model.actions;
-    for (let action of actions) {
-        action.isSelected = false;
-    }    
-    actions[index].isSelected = true;
+function selectAction(action) {
+    model.selectedAction = action;
     updateView();
 }
 

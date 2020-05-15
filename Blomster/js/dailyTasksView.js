@@ -69,16 +69,14 @@ function displayDate(dateIsoTxt) {
 }
 
 function createActionsHtml() {
-    const actions = model.actions;
     let html = '';
-    for (let i = 0; i < actions.length; i++) {
-        const action = actions[i];
+    for (let action of model.actions) {
         const actionHtml = action.id !== model.selectedAction ? '' : `
                     <div class="selectedRadio">
                     </div>                            
                     `;
         html += `
-            <div class="action" onclick="selectAction(${i})">
+            <div class="action" onclick="selectAction('${action.id}')">
                 <div class="radio">
                     ${actionHtml}
                 </div>

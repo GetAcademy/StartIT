@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
     <script src="js/model.js"></script>
     <script src="js/dailyTasksController.js"></script>
     <script src="js/dailyTasksView.js"></script>
@@ -17,7 +17,9 @@
         // view
         updateView();
         function updateView() {
-            updateViewDailyTasks();            
+            if (model.selectedPage === 'dailyTasks') {
+                updateViewDailyTasks();
+            } 
         }
     </script>
 </body>

@@ -1,4 +1,5 @@
 const model = {
+    selectedPage: 'dailyTasks',
     selectedDate: '2020-05-15',
     selectedAction: 'water',
     actions: [

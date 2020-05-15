@@ -9,6 +9,7 @@ function updateViewDailyTasks() {
         <div class="flowerList">
             ${createFlowerListHtml()}
         </div>
+        <!-- <input type="text" oninput="model.someText = this.value"/> -->
     `;
 }
 

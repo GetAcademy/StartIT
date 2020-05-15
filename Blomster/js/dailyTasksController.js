@@ -10,4 +10,3 @@ function selectAction(index) {
 
 
 
-const filteredList = filterAbove18(list);

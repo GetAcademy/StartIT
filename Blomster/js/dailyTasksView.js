@@ -28,19 +28,27 @@ function createFlowerListHtml() {
 function filterFlowersByDateAndTask() {
     const flowers = [];
     for (let flower of model.flowers) {
-        let tasks = getTasksOfCorrectType(flower);
+        let tasks = filterTasksOfCorrectType(flower);
         if (tasks.length === 0) continue;
-        tasks = filterTasksForToday(tasks);
+        tasks = filterTasksForSelectedDate(tasks);
         if (tasks.length > 0) flowers.push(flower);
     }
     return flowers;
 }
 
-function filterTasksForToday(tasks) {
+
+function filterTasksOfCorrectType(flower) {
+    const action = model.selectedAction;
+    if (action === 'all') return flower.tasks;
+    const task = flower.tasks[action];
+    return task ? [task] : [];
+}
+
+function filterTasksForSelectedDate(tasks) {
     const filteredTasks = [];
     for (let task of tasks) {
         const nextTaskDay = addDays(new Date(task.lastDate), task.frequencyDays);
-        if (dateWithoutTime(nextTaskDay) === dateWithoutTime(new Date())) {
+        if (dateWithoutTime(nextTaskDay) <= dateWithoutTime(new Date())) {
             filteredTasks.push(task);
         }
     }
@@ -56,14 +64,6 @@ function addDays(date, dayCount) {
     return new Date(millis);
 }
 
-function getTasksOfCorrectType(flower) {
-    const action = model.selectedAction;
-    if (action === 'all') return flower.tasks;
-    const task = flower.tasks[action];
-    return task ? [task] : [];
-}
-
-
 function displayDate(dateIsoTxt) {
     return new Date(dateIsoTxt).toLocaleDateString();
 }
@@ -72,9 +72,9 @@ function createActionsHtml() {
     let html = '';
     for (let action of model.actions) {
         const actionHtml = action.id !== model.selectedAction ? '' : `
-                    <div class="selectedRadio">
-                    </div>                            
-                    `;
+            <div class="selectedRadio">
+            </div>                            
+            `;
         html += `
             <div class="action" onclick="selectAction('${action.id}')">
                 <div class="radio">

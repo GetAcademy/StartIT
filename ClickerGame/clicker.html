@@ -1,48 +1,51 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title></title>
     <style>
         div {
-            font-size: 500%;
+            font-size: 300%;
             user-select: none;
         }
     </style>
 </head>
+
 <body>
-    <div id="image" onclick="changeImage()"></div>
-    <div id="pointsInfo"></div>
-    <button onclick="buyUpgrade()">Kjøp oppgradering (10 poeng)</button>
+    <div id="app"></div>
 
     <script>
-        var imageDiv = document.getElementById('image');
-        var pointsDiv = document.getElementById('pointsInfo');
-
         // model
         var points = 0;
         var pointsPerClick = 1;
+        var smileyIndex = 0;
 
         // controller
-        function changeImage() {
+        function doClick() {
             points += pointsPerClick;
-            show();
+            smileyIndex = 1 - smileyIndex;
+            updateView();
         }
 
         function buyUpgrade() {
             if (points < 10) return;
             points -= 10;
             pointsPerClick++;
-            show();
+            updateView();
         }
 
         // view
-        show();
-        function show() {
-            imageDiv.innerHTML = points % 2 === 0 ? '😀' : '😃';
-            pointsDiv.innerHTML = points;
+        updateView();
+        function updateView() {
+            var smiley = smileyIndex == 0 ? '😀' : '😁';
+            document.getElementById('app').innerHTML = `
+                <div id="image" onclick="doClick()">${smiley}</div>
+                <div id="pointsInfo">${points}</div>
+                <button onclick="buyUpgrade()">Kjøp oppgradering (10 poeng)</button>
+            `;
         }
     </script>
 </body>
+
 </html>
